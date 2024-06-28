@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder-dark.css",
-	"sourceRoot": "/home/r4nc0x/Desktop/R4NC0X",
+	"sourceRoot": "/home/r4nc0x/Desktop/r4nc0x.github.io",
 	"sources": [
 		"themes/hugo-coder-main/assets/scss/coder-dark.scss",
 		"themes/hugo-coder-main/assets/scss/_variables.scss",
