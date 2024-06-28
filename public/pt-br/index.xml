@@ -9,18 +9,18 @@
     <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/pt-br/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HTB Meow WriteUp</title>
+      <link>http://localhost:1313/pt-br/posts/meow/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt-br/posts/meow/</guid>
+      <description> Meow &amp;ndash; HacktheBox Link para o cabeçalho Sistema: Linux Dificultad: Easy Plataforma: HacktheBox </description>
+    </item>
+    <item>
       <title>R4NC0X</title>
       <link>http://localhost:1313/pt-br/about/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pt-br/about/</guid>
       <description>❯ whoami r4nc0x Hola, mi nombre es Steven o también conocido como &amp;ldquo;r4nc0x&amp;rdquo;. Me gradué del bachillerato técnico y decidí enfocarme en lo que más me gusta que es la seguridad informática.&#xA;Comencé a practicar de forma independiente usando todo lo que tenía a mi disposición como internet y libros, hasta que decidí ingresar a una academia de hacking Hack4u.&#xA;Actualmente voy a empezar a entrenar con la herramienta HackTheBox (HTB).</description>
-    </item>
-    <item>
-      <title>Conteúdo Rico</title>
-      <link>http://localhost:1313/pt-br/posts/rich-content/</link>
-      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pt-br/posts/rich-content/</guid>
-      <description>&lt;p&gt;O Hugo vem com vários &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shortcodes Internos&lt;/a&gt; para conteúdo rico, assim como uma &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Configuração de Privacidade&lt;/a&gt; e uma gama de Shortcodes simples que permitem embutir versões estáticas e sem JS de várias de redes sociais.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xA;  &#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link para o cabeçalho&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link para o cabeçalho&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Contacto</title>

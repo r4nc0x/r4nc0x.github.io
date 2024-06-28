@@ -192,7 +192,7 @@ weight = 5
 url = "contact/"
 
 [languages.pt-br]
-languageName = ":es:"
+languageName = ":chile:"
 title = "R4NC0X"
 
 [languages.pt-br.params]
@@ -207,7 +207,7 @@ weight = 1
 url = "about/"
 
 [[languages.pt-br.menu.main]]
-name = "Blogs/Documentacion"
+name = "Blogs/WriteUps"
 weight = 2
 url = "posts/"
 
