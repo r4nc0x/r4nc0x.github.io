@@ -192,7 +192,7 @@ weight = 5
 url = "contact/"
 
 [languages.es]
-languageName = ":es:"
+languageName = ":chile:"
 title = "R4NC0X"
 
 [languages.es.params]
