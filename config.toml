@@ -191,32 +191,32 @@ name = "Contact"
 weight = 5
 url = "contact/"
 
-[languages.pt-br]
+[languages.es]
 languageName = ":chile:"
 title = "R4NC0X"
 
-[languages.pt-br.params]
+[languages.es.params]
 author = "R4NC0X"
 info = "hacker Etico"
 description = ""
 keywords = ""
 
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "r4nc0x"
 weight = 1
 url = "about/"
 
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Blogs/WriteUps"
 weight = 2
 url = "posts/"
 
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Proyetos"
 weight = 3
 url = "projects/"
 
-[[languages.pt-br.menu.main]]
+[[languages.es.menu.main]]
 name = "Contacto"
 weight = 5
 url = "contact/"
