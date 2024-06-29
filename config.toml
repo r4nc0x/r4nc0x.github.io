@@ -214,7 +214,7 @@ url = "posts/"
 [[languages.es.menu.main]]
 name = "Proyetos"
 weight = 3
-url = "projects/"
+url = "proyectos/"
 
 [[languages.es.menu.main]]
 name = "Contacto"
