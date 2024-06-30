@@ -171,7 +171,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              Un minuto de lectura
+              3 minutos de lectura.
             </span>
           </div>
           
@@ -204,10 +204,99 @@
 </h1>
 <ul>
 <li>Sistema: <em>Linux</em></li>
-<li>Dificultad: <em>Easy</em></li>
+<li>Dificultad: <em>Facil</em></li>
 <li>Plataforma: <em>HacktheBox</em></li>
 </ul>
 <p><img alt="&lsquo;Meow&rsquo; Avatar" src="/images/Meow.webp"></p>
+<hr>
+<h2 id="resumen">
+  Resumen
+  <a class="heading-link" href="#resumen">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>&ldquo;Meow&rdquo; es una maquina de dificultad &ldquo;Muy Facil&rdquo; de la plataforma <code>HackTheBox</code>. Meow forma parte de los laboratorios de <code>Punto de Partida</code>.
+Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip <code>10.129.202.44</code> especificamente el puerto 23/tcp, ya que supe que el puerto esta abierto con el servicio telnet usando el comando <code>Telnet [DireccionIp]</code> me conecte al servidor <code>meow</code> y proporcionando <code>root</code> como nombre de dominio logre ingresar al servidor, usando <code>ls</code> listo los contenidos del servidor y encuentro un archivo <code>flag.txt</code> con el comando <code>cat</code> veo el contenido del archivo y asi encuentro la <code>flag</code> resolviendo esta maquina.</p>
+<hr>
+<h2 id="procedimiento">
+  Procedimiento
+  <a class="heading-link" href="#procedimiento">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Para atacar la maquina meow se necesita estar en la misma red, conectese a la VPN de <code>Punto de Partida</code> usando una de las siguientes opciones:</p>
+<p><img alt="Anexo1" src="/images/Meow/Anexo1.png"></p>
+<p>He utilizado el metodo <code>OVPN</code> y Kali Linux como sistema principal para este proyecto, Descargue el archivo (.ovpn):</p>
+<p><img alt="Anexo2" src="/images/Meow/Anexo2.png"></p>
+<p>Abri una terminal y ejecute el siguiente comando:</p>
+<ul>
+<li>
+<p><strong>sudo openvpn starting_point_R4NC0X.ovpn</strong></p>
+</li>
+<li>
+<p><strong>El nombre <code>starting_point_R4NC0X.ovpn</code> debe ser remplazado por el nombre del archivo que descago en su maquina</strong></p>
+</li>
+</ul>
+<p><img alt="Anexo3" src="/images/Meow/Anexo3.png"></p>
+<p>Actualice la pagina en el navegador para comprobar la nueva conexion y activamos la maquina haciendo clic en <code>Maquina de Aparicion</code></p>
+<p><img alt="Anexo4" src="/images/Meow/Anexo4.png"></p>
+<p>La maquina ya se encuentra activa y ahora muestra la direccion ip</p>
+<p><img alt="Anexo5" src="/images/Meow/Anexo5.png"></p>
+<p>Ahora resuelvo todas las tareas de la maquina, algunas de las tareas son pistas para resolver esta maquina.</p>
+<ul>
+<li><strong>Tarea 1 ¿Que significa las siglas VM?</strong></li>
+</ul>
+<p><code>Virtual Machine</code></p>
+<ul>
+<li><strong>Tarea 2 ¿Que herramientas utilizamos para interactuar con el sistema operativo para poder emitir comandos a traves de la linea de comandos, como por ejemplo el de iniciar nuestra conexion VPN? Tambien se la conoce como consola o shell</strong></li>
+</ul>
+<p><code>Terminal</code></p>
+<ul>
+<li><strong>Tarea 3 ¿Que servicio utilizamos para formar nuestra conexion VPN en los laboratorios HTB?</strong></li>
+</ul>
+<p><code>openvpn</code></p>
+<ul>
+<li><strong>Tarea 4 ¿Que herramienta utilizamos para probar nuestra conexion con el objetivo con una solicitud de eco ICPM?</strong></li>
+</ul>
+<p><code>Ping</code></p>
+<ul>
+<li><strong>Tarea 5 ¿Como se llama la herramienta mas comun para encontrar puertos abiertos en un objetivo</strong></li>
+</ul>
+<p><code>Nmap</code></p>
+<ul>
+<li><strong>Tarea 6 ¿Que servicio identificamos en el puerto 23/tcp durante nuestros escaneos?</strong></li>
+</ul>
+<p><code>Telnet</code></p>
+<ul>
+<li><strong>Tarea 7 ¿Que nombre de usuario puede iniciar sesion en el objetivo a traves de telnet con una contraseña en blanco?</strong></li>
+</ul>
+<p><code>Root</code></p>
+<ul>
+<li><strong>Enviar Bandera Root</strong>
+Para poder encontrar la bandera realice un escaneo a la ip de la maquina usando la herramienta <code>Nmap</code></li>
+</ul>
+<p><img alt="Anexo6" src="/images/Meow/Anexo6.png"></p>
+<p>Observe que en el puerto 23 esta abierto el servicio Telnet, entonces escribo el comando <code>Telnet</code> con la dirrecion ip.</p>
+<p><img alt="Anexo7" src="/images/Meow/Anexo7.png"></p>
+<p>Usando el nombre de usuario predeterminado en el <code>Meow login</code> podremos acceder a la maquina <code>Meow</code></p>
+<p><img alt="Anexo8" src="/images/Meow/Anexo8.png"></p>
+<p>Usando el comando <code>ls</code> vamos a listar todos los elementos que contiene el directorio <code>root@meow</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@meow:ls
+</span></span><span class="line"><span class="cl">flag.txt snap
+</span></span><span class="line"><span class="cl">root@meow:cat flag.txt
+</span></span><span class="line"><span class="cl">b40abdfe23665f766f9c61ecba8a4c19
+</span></span></code></pre></div><p>La bandera ya fue encontrada, la copio y la pego en <code>Enviar bandera</code>
+Una ves enviada la bandera salio un mensaje diciendo <code>Meow has been Pwned</code></p>
+<hr>
+<h2 id="maquina-completada-">
+  Maquina Completada :)
+  <a class="heading-link" href="#maquina-completada-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 
       </div>
 
