@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/es/tags/machine/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HTB Fawn WriteUp</title>
+      <link>http://localhost:1313/es/posts/fawn/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/fawn/</guid>
+      <description> Fawn &amp;ndash; HacktheBox Link to heading Sistema: Linux Dificultad: Facil Plataforma: HacktheBox Resumen Link to heading Procedimiento Link to heading Maquina Completada :) Link to heading </description>
+    </item>
+    <item>
       <title>HTB Meow WriteUp</title>
       <link>http://localhost:1313/es/posts/meow/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>

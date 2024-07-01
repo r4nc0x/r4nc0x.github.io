@@ -9,11 +9,18 @@
     <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/htb/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HTB Fawn WriteUp</title>
+      <link>http://localhost:1313/posts/fawn/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fawn/</guid>
+      <description> Fawn &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Easy Plataform: HacktheBox Summary Link to heading Procedure Link to heading Completed Machine :) Link to heading </description>
+    </item>
+    <item>
       <title>HTB Meow WriteUp</title>
       <link>http://localhost:1313/posts/meow/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/meow/</guid>
-      <description> Meow &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Easy Plataform: HacktheBox </description>
+      <description>Meow &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Easy Plataform: HacktheBox Summary Link to heading &amp;ldquo;Meow&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the HackTheBox platform. Meow is part of the Starting Point laboratories. To complete the machine run nmap to perform a port scan to the IP address 10.129.202.44 specifically port 23/tcp, since I knew that the port is open with the telnet service using the command Telnet [IPAddress] me connect to the meow server and providing root as the domain name I manage to enter the server, using ls I list the contents of the server and find a file flag.</description>
     </item>
   </channel>
 </rss>

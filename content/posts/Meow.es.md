@@ -15,10 +15,10 @@ tags = [
 # Meow -- HacktheBox
 
 - Sistema: _Linux_
-- Dificultad: _Facil_
+- Dificultad: _Muy Facil_
 - Plataforma: _HacktheBox_
 
-!['Meow' Avatar](/images/Meow.webp)
+!['Meow' Avatar](/images/Meow/Meow.webp)
 
 ___
 
