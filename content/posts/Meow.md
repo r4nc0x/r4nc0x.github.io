@@ -106,8 +106,9 @@ flag.txt snap
 root@meow:cat flag.txt
 b40abdfe23665f766f9c61ecba8a4c19
 ```
-La bandera ya fue encontrada, la copia y la pego en `Send Flag`
-Una ves envió la bandera salio un mensaje que decía `Meow has been Pwned`
+
+The flag was already found, I copied it and pasted it into `Send Flag`.
+Once I sent the flag, a message appeared that said `Meow has been Pwned`
 
 ___
 
