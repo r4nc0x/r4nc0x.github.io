@@ -88,11 +88,11 @@ Now I solve all the tasks of the machine, some of the tasks are clues to solve t
 - **Send Root Flag**
 In order to find the flag, scan the machine's IP using the `Nmap` tool.
 
-![Anexo6](images/Meow/Anexo6.png)
+![Anexo6](/images/Meow/Anexo6.png)
 
 Note that the Telnet service is open on port 23, so I write the command `Telnet` with the IP address.
 
-![Anexo7](images/Meow/Anexo7.png)
+![Anexo7](/images/Meow/Anexo7.png)
 
 Using the default username in the `Meow login` we can access the `Meow` machine
 
