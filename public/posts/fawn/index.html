@@ -171,7 +171,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              One-minute read
+              3-minute read
             </span>
           </div>
           
@@ -216,6 +216,8 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
+<p>&ldquo;Fawn&rdquo; is a &ldquo;Very Easy&rdquo; difficulty machine from the <code>HackTheBox</code> platform. Fawn is part of the &lsquo;Punto de Partida&rsquo; laboratories.
+To complete this machine run nmap to perform a port scan to the IP address <code>10.129.219.195</code>, the Fawn machine deals with the &ldquo;FTP&rdquo; protocol so my scan to the machine resulted in an open port 21/TCP since I knew that it is an FTP port, use the command <code>ftp [IpAddress]</code> I connect to the machine with a default name <code>anonymous</code> and with a blank password I enter the machine, inside the machine I execute the command <code>ls</code> To list the contents, the search result gives me a file <code>flag.txt</code> and with the <code>get</code> command I download the file to my machine, I do a <code>cat flag.txt</code> and that&rsquo;s how I get the flag of the machine Fawn</p>
 <hr>
 <h2 id="procedure">
   Procedure
@@ -224,6 +226,82 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
+<p>We start by solving the machine&rsquo;s Tasks, some of the tasks are clues to solve the machine.</p>
+<ul>
+<li><strong>Task 1 What does the 3-letter acronym FTP mean?</strong></li>
+</ul>
+<p><code>File Transfer Protocol</code></p>
+<ul>
+<li><strong>Task 2 What port does the FTP service usually listen on?</strong></li>
+</ul>
+<p><code>21</code></p>
+<ul>
+<li><strong>Task 3 What acronym is used for the version of FTP secured by running the SSH protocol?</strong></li>
+</ul>
+<p><code>sftp</code></p>
+<ul>
+<li><strong>Task 4 What is the command we can use to send an ICMP echo request to test our connection with the target?</strong></li>
+</ul>
+<p><code>Ping</code></p>
+<ul>
+<li><strong>Task 5 Based on your scans, what version of FTP is running on the destination?</strong></li>
+</ul>
+<p><code>vsftpd 3.0.3</code></p>
+<ul>
+<li><strong>Task 6 Based on your analysis, what type of operating system is running on the target?</strong></li>
+</ul>
+<p><code>Unix</code></p>
+<ul>
+<li><strong>Task 7 What is the command that we must execute to display the help menu of the &lsquo;ftp&rsquo; client?</strong></li>
+</ul>
+<p><code>ftp -h</code></p>
+<ul>
+<li><strong>Task 8 What is the username used on FTP when you want to log in without having an account?</strong></li>
+</ul>
+<p><code>Anonymous</code></p>
+<ul>
+<li><strong>Task 9 What is the response code we received for the FTP message &lsquo;Login Successful&rsquo;?</strong></li>
+</ul>
+<p><code>230</code></p>
+<ul>
+<li><strong>Task 10 There are a couple of commands that we can use to list the files and directories available on the FTP server. One is to say. What is the other common way to list files on a Linux system?</strong></li>
+</ul>
+<p><code>ls</code></p>
+<ul>
+<li><strong>Task 11 What is the command used to download the file that we found on the FTP server?</strong></li>
+</ul>
+<p><code>get</code></p>
+<ul>
+<li><strong>Send Root Flag</strong></li>
+</ul>
+<p>In order to find the flag, scan the machine&rsquo;s IP using the <code>Nmap</code> tool.</p>
+<p><img alt="Anexo1" src="/images/Fawn/Anexo1.png"></p>
+<p>Note that there is a single open port <code>21/tcp</code>, it is an <code>FTP</code> service, the scan also shows us important data such as version, login, and permissions.</p>
+<p><img alt="Anexo2" src="/images/Fawn/Anexo2.png"></p>
+<p>Using the command <code>ftp [IpAddress]</code> I enter and it asks me for a username, ftp provides a user by default, so using the name <code>anonymous</code> and with an empty password I manage to enter the machine.</p>
+<p><img alt="Anexo3" src="/images/Fawn/Anexo3.png"></p>
+<p>Once inside the machine, use <code>ls</code> to list contents and notice that there is a file called <code>flag.txt</code> with the <code>get</code> command I download it to my machine.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ftp&gt; ls
+</span></span><span class="line"><span class="cl"><span class="m">229</span> Entering Extended Passive Mode <span class="o">(||</span><span class="p">|</span>9137<span class="p">|</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="m">150</span> Here comes the directory listing.
+</span></span><span class="line"><span class="cl">-rw-r--r--    <span class="m">1</span> <span class="m">0</span>        <span class="m">0</span>              <span class="m">32</span> Jun <span class="m">04</span>  <span class="m">2021</span> flag.txt
+</span></span><span class="line"><span class="cl"><span class="m">226</span> Directory send OK.
+</span></span><span class="line"><span class="cl">ftp&gt; get flag.txt
+</span></span><span class="line"><span class="cl">local: flag.txt remote: flag.txt
+</span></span><span class="line"><span class="cl"><span class="m">229</span> Entering Extended Passive Mode <span class="o">(||</span><span class="p">|</span>39526<span class="p">|</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="m">150</span> Opening BINARY mode data connection <span class="k">for</span> flag.txt <span class="o">(</span><span class="m">32</span> bytes<span class="o">)</span>.
+</span></span><span class="line"><span class="cl">100% <span class="p">|</span>*************************************************************************************************************************************************************************************************<span class="p">|</span>    <span class="m">32</span>       21.25 KiB/s    00:00 ETA
+</span></span><span class="line"><span class="cl"><span class="m">226</span> Transfer complete.
+</span></span><span class="line"><span class="cl"><span class="m">32</span> bytes received in 00:00 <span class="o">(</span>0.14 KiB/s<span class="o">)</span>
+</span></span></code></pre></div><p>On my machine with the <code>cat</code> command I discover the flag.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">❯ cat flag.txt
+</span></span><span class="line"><span class="cl">───────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</span></span><span class="line"><span class="cl">       │ File: flag.txt
+</span></span><span class="line"><span class="cl">───────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</span></span><span class="line"><span class="cl">   <span class="m">1</span>   │ 035db21c88152006**************
+</span></span></code></pre></div><p>I enter the flag in the last Task of the machine <code>Send Flag</code>.</p>
+<p>Once the flag was sent, a message came out saying &lsquo;Meow has been Pwned&rsquo;.</p>
+<p><img alt="Anexo4" src="/images/Fawn/Anexo4.png"></p>
 <hr>
 <h2 id="completed-machine-">
   Completed Machine :)
