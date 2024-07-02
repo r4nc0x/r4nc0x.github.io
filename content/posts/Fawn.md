@@ -119,7 +119,7 @@ On my machine with the `cat` command I discover the flag.
 ```
 I enter the flag in the last Task of the machine `Send Flag`.
 
-Once the flag was sent, a message came out saying 'Meow has been Pwned'.
+Once the flag was sent, a message came out saying `Fawn has been Pwned`.
 
 ![Anexo4](/images/Fawn/Anexo4.png)
 ___

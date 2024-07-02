@@ -119,7 +119,7 @@ En mi maquina con el comando `cat` descubro la flag.
 ```
 Ingreso la flag en la ultima Tarea de la maquina `Enviar bandera`.
 
-Una ves enviada la bandera salio un mensaje diciendo `Meow has been Pwned`.
+Una ves enviada la bandera salio un mensaje diciendo `Fawn has been Pwned`.
 
 ![Anexo4](/images/Fawn/Anexo4.png)
 ___
