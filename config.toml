@@ -139,6 +139,12 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/r4nc0x/"
 
+[[params.social]]
+name = "HackTheBox"
+icon = "fa fa-cube fa-2x"
+weight = 7
+url = "https://app.hackthebox.com/profile/#1995208"
+
 #[[params.social]]
 #name = "Gitlab"
 #icon = "fa-brands fa-gitlab fa-2x"
