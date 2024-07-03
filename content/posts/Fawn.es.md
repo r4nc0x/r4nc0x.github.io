@@ -3,7 +3,7 @@ date = 2024-06-27
 title = "HTB Fawn WriteUp"
 slug = ""
 author = ["R4NC0X"]
-description = "HackThebox 'Analysis' WriteUp"
+description = "HackThebox 'Fawn' WriteUp"
 draft = false
 tags = [
     "HTB",
