@@ -7,7 +7,7 @@ description = "HackThebox 'Dancing' WriteUp"
 draft = false
 tags = [
     "HTB",
-    "machine",
+    "Maquina",
     "Windows",
 ]
 +++
@@ -18,7 +18,7 @@ tags = [
 - Dificultad: _Muy Facil_
 - Plataforma: _HacktheBox_
 
-!['Fawn' Avatar](/images/Fawn/Fawn.webp)
+!['Fawn' Avatar](/images/Dancing/Dancing.png)
 
 ___
 

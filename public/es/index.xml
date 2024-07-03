@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HTB Dancing WriteUp</title>
+      <link>http://localhost:1313/es/posts/dancing/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/dancing/</guid>
+      <description> Dancing &amp;ndash; HacktheBox Link to heading Sistema: Windows Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading Procedimiento Link to heading Maquina Completada :) Link to heading </description>
+    </item>
+    <item>
       <title>HTB Fawn WriteUp</title>
       <link>http://localhost:1313/es/posts/fawn/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>

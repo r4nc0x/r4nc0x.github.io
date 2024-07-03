@@ -23,10 +23,17 @@
       <description></description>
     </item>
     <item>
-      <title>Machine</title>
-      <link>http://localhost:1313/es/tags/machine/</link>
+      <title>Maquina</title>
+      <link>http://localhost:1313/es/tags/maquina/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/es/tags/machine/</guid>
+      <guid>http://localhost:1313/es/tags/maquina/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/es/tags/windows/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/windows/</guid>
       <description></description>
     </item>
   </channel>

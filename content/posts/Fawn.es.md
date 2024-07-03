@@ -7,7 +7,7 @@ description = "HackThebox 'Fawn' WriteUp"
 draft = false
 tags = [
     "HTB",
-    "machine",
+    "Maquina",
     "Linux",
 ]
 +++

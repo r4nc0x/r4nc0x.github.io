@@ -18,7 +18,7 @@ tags = [
 - Difficulty: _Very Easy_
 - Plataform: _HacktheBox_
 
-!['Fawn' Avatar](/images/Fawn/Fawn.webp)
+!['Fawn' Avatar](/images/Dancing/Dancing.png)
 
 ___
 
