@@ -25,6 +25,7 @@ ___
 ## Resumen 
 
 "Meow" es una maquina de dificultad "Muy Facil" de la plataforma `HackTheBox`. Meow forma parte de los laboratorios de `Punto de Partida`.
+
 Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip `10.129.202.44` especificamente el puerto 23/tcp, ya que supe que el puerto esta abierto con el servicio telnet usando el comando `Telnet [DireccionIp]` me conecte al servidor `meow` y proporcionando `root` como nombre de dominio logre ingresar al servidor, usando `ls` listo los contenidos del servidor y encuentro un archivo `flag.txt` con el comando `cat` veo el contenido del archivo y asi encuentro la `flag` resolviendo esta maquina.
 
 ___

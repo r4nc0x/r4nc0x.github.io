@@ -25,6 +25,7 @@ ___
 ## Summary
 
 "Meow" is a "Very Easy" difficulty machine from the `HackTheBox` platform. Meow is part of the `Starting Point` laboratories.
+
 To complete the machine run nmap to perform a port scan to the IP address `10.129.202.44` specifically port 23/tcp, since I knew that the port is open with the telnet service using the command `Telnet [IPAddress]` me connect to the `meow` server and providing `root` as the domain name I manage to enter the server, using `ls` I list the contents of the server and find a file `flag.txt` with the command `cat` I see the contents of the file and This is how I find the `flag` solving this machine.
 
 ___

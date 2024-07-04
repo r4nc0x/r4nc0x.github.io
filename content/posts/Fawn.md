@@ -24,7 +24,8 @@ ___
 
 ## Summary
 
-"Fawn" is a "Very Easy" difficulty machine from the `HackTheBox` platform. Fawn is part of the 'Punto de Partida' laboratories.
+"Fawn" is a "Very Easy" difficulty machine from the `HackTheBox` platform. Fawn is part of the `Starting Point` laboratories.
+
 To complete this machine run nmap to perform a port scan to the IP address `10.129.219.195`, the Fawn machine deals with the "FTP" protocol so my scan to the machine resulted in an open port 21/TCP since I knew that it is an FTP port, use the command `ftp [IpAddress]` I connect to the machine with a default name `anonymous` and with a blank password I enter the machine, inside the machine I execute the command `ls` To list the contents, the search result gives me a file `flag.txt` and with the `get` command I download the file to my machine, I do a `cat flag.txt` and that's how I get the flag of the machine Fawn
 
 ___

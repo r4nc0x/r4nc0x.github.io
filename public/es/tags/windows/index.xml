@@ -13,7 +13,7 @@
       <link>http://localhost:1313/es/posts/dancing/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/es/posts/dancing/</guid>
-      <description> Dancing &amp;ndash; HacktheBox Link to heading Sistema: Windows Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading Procedimiento Link to heading Maquina Completada :) Link to heading </description>
+      <description>Dancing &amp;ndash; HacktheBox Link to heading Sistema: Windows Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Dancing&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma HackTheBox. Dancing forma parte de los laboratorios de Punto de Partida.&#xA;Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip 10.129.22.109, la maquina nos propone el uso de un servicio que es SMB [Server Message Block] entonces supe que mi escaneo tendria que enfocarse en el puerto 445.</description>
     </item>
   </channel>
 </rss>

@@ -25,6 +25,7 @@ ___
 ## Resumen 
 
 "Fawn" es una maquina de dificultad "Muy Facil" de la plataforma `HackTheBox`. Fawn forma parte de los laboratorios de `Punto de Partida`.
+
 Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip `10.129.219.195`, la maquina Fawn trata del protocolo "FTP" por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando `ftp [DireccionIp]` me conecto a la maquina con un nombre predeterminado `anonymous` y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando `ls` para listar los contenidos, el resultado de la busqueda me arroja un archivo `flag.txt` y con el comando `get` me dascargo el archivo en mi maquina, hago un `cat flag.txt` y asi consigo la bandera de la maquina Fawn
 
 ___
@@ -35,7 +36,7 @@ Empezamos resolviendo las Tareas de la maquina, algunas de las tareas son pistas
 
 - **Tarea 1 ¿Qué significa el acrónimo de 3 letras FTP?** 
 
-`Protocolo de Transferencia de Aechivos`
+`Protocolo de Transferencia de Archivos`
 
 - **Tarea 2 ¿En qué puerto escucha habitualmente el servicio FTP?**
 
