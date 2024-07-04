@@ -6,19 +6,26 @@
     <description>Recent content on R4NC0X</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Redeemer WriteUp</title>
+      <link>http://localhost:1313/posts/redeemer/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/redeemer/</guid>
+      <description> Redeemer &amp;ndash; HacktheBox Link to heading System: Redeemer Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading Procedure Link to heading Completed Machine :) Link to heading </description>
+    </item>
     <item>
       <title>HTB Dancing WriteUp</title>
       <link>http://localhost:1313/posts/dancing/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/dancing/</guid>
       <description>Dancing &amp;ndash; HacktheBox Link to heading System: Windows Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading &amp;ldquo;Dancing&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the HackTheBox platform. Dancing is part of the Starting Point laboratories.&#xA;To complete the machine, run nmap to perform a port scan to the IP address 10.129.22.109, the machine proposes the use of a service that is SMB [Server Message Block] so I knew that my scan would have to focus on port 445.</description>
     </item>
     <item>
       <title>HTB Fawn WriteUp</title>
       <link>http://localhost:1313/posts/fawn/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/fawn/</guid>
       <description>Fawn &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading &amp;ldquo;Fawn&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the HackTheBox platform. Fawn is part of the Starting Point laboratories.&#xA;To complete this machine run nmap to perform a port scan to the IP address 10.129.219.195, the Fawn machine deals with the &amp;ldquo;FTP&amp;rdquo; protocol so my scan to the machine resulted in an open port 21/TCP since I knew that it is an FTP port, use the command ftp [IpAddress] I connect to the machine with a default name anonymous and with a blank password I enter the machine, inside the machine I execute the command ls To list the contents, the search result gives me a file flag.</description>
     </item>

@@ -54,6 +54,19 @@
                 href="http://localhost:1313/es/posts/meow/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/redeemer/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/redeemer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/posts/redeemer/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/tags/linux/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
