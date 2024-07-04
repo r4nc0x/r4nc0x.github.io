@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/es/tags/htb/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,76 @@
                 href="http://localhost:1313/es/tags/htb/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/redeemer/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/redeemer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/posts/redeemer/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/tags/linux/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/linux/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/tags/maquina/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/tags/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/posts/dancing/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,8 +96,21 @@
                 href="http://localhost:1313/es/posts/dancing/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/tags/windows/</loc>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/windows/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/posts/fawn/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,61 +135,6 @@
                 href="http://localhost:1313/es/posts/meow/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/posts/redeemer/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/redeemer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/posts/redeemer/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/tags/linux/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/linux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/linux/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/tags/maquina/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/posts/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/posts/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/"
-                />
-  </url><url>
     <loc>http://localhost:1313/es/about/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -120,32 +146,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/about/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/tags/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/tags/windows/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/windows/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/authors/</loc>
