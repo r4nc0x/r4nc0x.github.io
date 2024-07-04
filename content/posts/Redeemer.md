@@ -14,7 +14,7 @@ tags = [
 
 # Redeemer -- HacktheBox
 
-- System: _Redeemer_
+- System: _Linux_
 - Difficulty: _Very Easy_
 - Plataform: _HacktheBox_
 
