@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/anonymous/guest-access/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/databases/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/htb/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -70,6 +76,25 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/reconnaissance/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/redis/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/redis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/redis/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/vulnerability-assessment/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/dancing/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -83,6 +108,22 @@
                 href="http://localhost:1313/posts/dancing/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/protocols/</loc>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/smb/</loc>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/smb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/smb/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/windows/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -94,6 +135,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/tags/windows/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/ftp/</loc>
+    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/ftp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/ftp/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/fawn/</loc>
@@ -122,6 +176,9 @@
                 href="http://localhost:1313/posts/meow/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/misconfiguration/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -134,6 +191,22 @@
                 hreflang="en"
                 href="http://localhost:1313/about/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/tags/telnet/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/telnet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/telnet/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/weak-credentials/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
     <lastmod>2023-01-05T01:15:52+01:00</lastmod>

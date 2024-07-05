@@ -9,6 +9,11 @@ tags = [
     "HTB",
     "machine",
     "Linux",
+    "Telnet",
+    "Protocols",
+    "Reconnaissance",
+    "Weak Credentials",
+    "Misconfiguration",
 ]
 +++
 

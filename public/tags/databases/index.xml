@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Databases on R4NC0X</title>
+    <link>http://localhost:1313/tags/databases/</link>
+    <description>Recent content in Databases on R4NC0X</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/databases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Redeemer WriteUp</title>
+      <link>http://localhost:1313/posts/redeemer/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/redeemer/</guid>
+      <description> Redeemer &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading Procedure Link to heading Completed Machine :) Link to heading </description>
+    </item>
+  </channel>
+</rss>

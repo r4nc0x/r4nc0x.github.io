@@ -9,6 +9,10 @@ tags = [
     "HTB",
     "machine",
     "Windows",
+    "Protocols",
+    "Smb",
+    "Reconnaissance",
+    "Anonymous/guest access",
 ]
 +++
 

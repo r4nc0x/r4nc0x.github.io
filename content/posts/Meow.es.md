@@ -9,6 +9,11 @@ tags = [
     "HTB",
     "Maquina",
     "Linux",
+    "Telnet",
+    "Protocolos",
+    "Reconocimiento",
+    "Credenciales Debiles",
+    "Mala Configuracion",
 ]
 +++
 

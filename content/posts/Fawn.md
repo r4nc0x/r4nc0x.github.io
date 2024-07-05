@@ -9,6 +9,10 @@ tags = [
     "HTB",
     "machine",
     "Linux",
+    "Ftp",
+    "Protocols",
+    "Reconnaissance",
+    "Anonymous/guest access",
 ]
 +++
 
