@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/redeemer/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/redeemer/</guid>
-      <description> Redeemer &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading Procedure Link to heading Completed Machine :) Link to heading </description>
+      <description>Redeemer &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading &amp;ldquo;Redeemer&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the HackTheBox platform. Redeemer is part of the Starting Point laboratories.&#xA;To complete this machine, use nmap to perform port scanning at the ip address ---. The machine proposes the use of the Redis service whose protocol is 6379, having already confirmed that the port is open, proceed to use the command redis-cli -h [IpAddress], with this I entered the machine and using the INFO command I was able to analyze which version of Redis is running as well as know how many clients and keys there are, having all this information with the use of the command KEYS * ready the keys that the machine has, one of the 4 is named flag so with the GET flag command I ready the content by finding the flag and resolving the machine.</description>
     </item>
     <item>
       <title>HTB Dancing WriteUp</title>

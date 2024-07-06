@@ -236,6 +236,8 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
+<p>&ldquo;Redeemer&rdquo; is a &ldquo;Very Easy&rdquo; difficulty machine from the <code>HackTheBox</code> platform. Redeemer is part of the <code>Starting Point</code> laboratories.</p>
+<p>To complete this machine, use nmap to perform port scanning at the ip address <code>---</code>. The machine proposes the use of the <code>Redis</code> service whose protocol is <code>6379</code>, having already confirmed that the port is open, proceed to use the command <code>redis-cli -h [IpAddress]</code>, with this I entered the machine and using the <code>INFO</code> command I was able to analyze which version of Redis is running as well as know how many clients and keys there are, having all this information with the use of the command <code>KEYS *</code> ready the keys that the machine has, one of the 4 is named <code>flag</code> so with the <code>GET flag</code> command I ready the content by finding the flag and resolving the machine.</p>
 <hr>
 <h2 id="procedure">
   Procedure

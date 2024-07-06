@@ -1,5 +1,5 @@
 +++
-date = 2024-06-30
+date = 2024-07-02
 title = "HTB Fawn WriteUp"
 slug = ""
 author = ["R4NC0X"]
