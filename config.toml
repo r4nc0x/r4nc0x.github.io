@@ -19,7 +19,7 @@ author = "R4NC0X"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "HACKING ETICAL"
 keywords = "blog,developer,personal"
-info = ["Hacking Etical"]
+info = ["Hacking Etical", "Red Teamer", "Penetration Tester"]
 avatarURL = "images/avatar.png"
 faviconSVG = "/images/avatar.svg"
 #favicon_32 = "/img/favicon-32x32.png"
@@ -206,7 +206,7 @@ title = "R4NC0X"
 
 [languages.es.params]
 author = "R4NC0X"
-info = "hacker Etico"
+info = ["hacker Etico", "Equipo Rojo", "Probador de Penetración"] 
 description = ""
 keywords = ""
 

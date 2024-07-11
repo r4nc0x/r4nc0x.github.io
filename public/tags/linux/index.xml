@@ -18,7 +18,7 @@
     <item>
       <title>HTB Fawn WriteUp</title>
       <link>http://localhost:1313/posts/fawn/</link>
-      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/fawn/</guid>
       <description>Fawn &amp;ndash; HacktheBox Link to heading System: Linux Difficulty: Very Easy Plataform: HacktheBox Summary Link to heading &amp;ldquo;Fawn&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the HackTheBox platform. Fawn is part of the Starting Point laboratories.&#xA;To complete this machine run nmap to perform a port scan to the IP address 10.129.219.195, the Fawn machine deals with the &amp;ldquo;FTP&amp;rdquo; protocol so my scan to the machine resulted in an open port 21/TCP since I knew that it is an FTP port, use the command ftp [IpAddress] I connect to the machine with a default name anonymous and with a blank password I enter the machine, inside the machine I execute the command ls To list the contents, the search result gives me a file flag.</description>
     </item>

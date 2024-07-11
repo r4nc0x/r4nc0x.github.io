@@ -13,19 +13,19 @@
       <link>http://localhost:1313/es/posts/redeemer/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/es/posts/redeemer/</guid>
-      <description>Redeemer &amp;ndash; HacktheBox Link to heading Sistema: Linux Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Redeemer&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; ded la plataforma HackTheBox. Redeemer forma parte de los laboratorios de Punto de Partida.&#xA;Para completar esta maquina utilize nmap para realizar escaneo de puertos a la dirrecion ip 10.129.5.10, La maquina propone el uso del servicio Redis cuyo protocolo es el 6379 ya confirmado que el puerto esta abierto procedi a usar el comando redis-cli -h [DireccionIp], con esto ingrese a la maquina y usando el comando INFO pude analizar que version de redis esta funcionando asi como saber cuantos clientes y keys hay, teniendo toda esta informacion con el uso del comando KEYS * listo las keys que tiene la maquina, una de las 4 lleva el nombre de flag por lo que con el comando GET flag listo el contenido encontrando la bandera y resolviendo la maquina.</description>
+      <description>Redeemer &amp;ndash; HacktheBox Link to heading Sistema: Linux Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Redeemer&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma HackTheBox. Redeemer forma parte de los laboratorios de Punto de Partida.&#xA;Para completar esta maquina utilize nmap para realizar escaneo de puertos a la dirrecion ip 10.129.5.10, La maquina propone el uso del servicio Redis cuyo protocolo es el 6379 ya confirmado que el puerto esta abierto procedi a usar el comando redis-cli -h [DireccionIp], con esto ingrese a la maquina y usando el comando INFO pude analizar que version de redis esta funcionando asi como saber cuantos clientes y keys hay, teniendo toda esta informacion con el uso del comando KEYS * listo las keys que tiene la maquina, una de las 4 lleva el nombre de flag por lo que con el comando GET flag listo el contenido encontrando la bandera y resolviendo la maquina.</description>
     </item>
     <item>
       <title>HTB Dancing WriteUp</title>
       <link>http://localhost:1313/es/posts/dancing/</link>
-      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/es/posts/dancing/</guid>
       <description>Dancing &amp;ndash; HacktheBox Link to heading Sistema: Windows Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Dancing&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma HackTheBox. Dancing forma parte de los laboratorios de Punto de Partida.&#xA;Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip 10.129.22.109, la maquina nos propone el uso de un servicio que es SMB [Server Message Block] entonces supe que mi escaneo tendria que enfocarse en el puerto 445.</description>
     </item>
     <item>
       <title>HTB Fawn WriteUp</title>
       <link>http://localhost:1313/es/posts/fawn/</link>
-      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/es/posts/fawn/</guid>
       <description>Fawn &amp;ndash; HacktheBox Link to heading Sistema: Linux Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Fawn&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma HackTheBox. Fawn forma parte de los laboratorios de Punto de Partida.&#xA;Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip 10.129.219.195, la maquina Fawn trata del protocolo &amp;ldquo;FTP&amp;rdquo; por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando ftp [DireccionIp] me conecto a la maquina con un nombre predeterminado anonymous y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando ls para listar los contenidos, el resultado de la busqueda me arroja un archivo flag.</description>
     </item>
