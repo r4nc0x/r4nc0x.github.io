@@ -2,286 +2,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/es/tags/acceso-anonimo/invitado/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/acceso-anonimo/invitado/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/es/tags/base-de-datos/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/base-de-datos/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/es/tags/evaluacion-de-vilnerabilidad/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/evaluacion-de-vilnerabilidad/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/es/tags/htb/</loc>
-    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/htb/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/tags/htb/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/posts/redeemer/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/htb/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/redeemer/"
+                href="https://r4nc0x.github.io/tags/htb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/posts/redeemer/"
+                href="https://r4nc0x.github.io/es/tags/htb/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/linux/</loc>
+    <loc>https://r4nc0x.github.io/es/posts/redeemer/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/linux/"
+                href="https://r4nc0x.github.io/posts/redeemer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/linux/"
+                href="https://r4nc0x.github.io/es/posts/redeemer/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/maquina/</loc>
-    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/posts/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/linux/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="https://r4nc0x.github.io/tags/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/posts/"
+                href="https://r4nc0x.github.io/es/tags/linux/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/maquina/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/posts/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://r4nc0x.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/"
+                href="https://r4nc0x.github.io/es/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/reconocimiento/</loc>
-    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/tags/redis/</loc>
+    <loc>https://r4nc0x.github.io/es/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/redis/"
+                href="https://r4nc0x.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/redis/"
+                href="https://r4nc0x.github.io/es/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/reconocimiento/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/tags/redis/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://r4nc0x.github.io/tags/redis/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/"
+                href="https://r4nc0x.github.io/es/tags/redis/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/acceso-anonimo/invitados/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://r4nc0x.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://r4nc0x.github.io/es/tags/"
+                />
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/tags/acceso-anonimo/invitados/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/es/posts/dancing/</loc>
-    <lastmod>2024-07-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/dancing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/posts/dancing/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/tags/protocolos/</loc>
-    <lastmod>2024-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/tags/smb/</loc>
+    <loc>https://r4nc0x.github.io/es/posts/dancing/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/smb/"
+                href="https://r4nc0x.github.io/posts/dancing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/smb/"
+                href="https://r4nc0x.github.io/es/posts/dancing/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/windows/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/protocolos/</loc>
+    <lastmod>2024-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/tags/smb/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/windows/"
+                href="https://r4nc0x.github.io/tags/smb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/windows/"
+                href="https://r4nc0x.github.io/es/tags/smb/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/ftp/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/windows/</loc>
+    <lastmod>2024-07-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://r4nc0x.github.io/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://r4nc0x.github.io/es/tags/windows/"
+                />
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/tags/ftp/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/ftp/"
+                href="https://r4nc0x.github.io/tags/ftp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/ftp/"
+                href="https://r4nc0x.github.io/es/tags/ftp/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/posts/fawn/</loc>
+    <loc>https://r4nc0x.github.io/es/posts/fawn/</loc>
     <lastmod>2024-07-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/fawn/"
+                href="https://r4nc0x.github.io/posts/fawn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/posts/fawn/"
+                href="https://r4nc0x.github.io/es/posts/fawn/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/credenciales-debiles/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/credenciales-debiles/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/es/posts/meow/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/meow/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/posts/meow/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/es/tags/mala-configuracion/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/about/</loc>
+    <loc>https://r4nc0x.github.io/es/posts/meow/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="https://r4nc0x.github.io/posts/meow/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/about/"
+                href="https://r4nc0x.github.io/es/posts/meow/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/tags/telnet/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/mala-configuracion/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/about/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/telnet/"
+                href="https://r4nc0x.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/telnet/"
+                href="https://r4nc0x.github.io/es/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/authors/</loc>
+    <loc>https://r4nc0x.github.io/es/tags/telnet/</loc>
+    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/authors/"
+                href="https://r4nc0x.github.io/tags/telnet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/authors/"
+                href="https://r4nc0x.github.io/es/tags/telnet/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/categories/</loc>
+    <loc>https://r4nc0x.github.io/es/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://r4nc0x.github.io/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/categories/"
+                href="https://r4nc0x.github.io/es/authors/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/contact/</loc>
+    <loc>https://r4nc0x.github.io/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/contact/"
+                href="https://r4nc0x.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/contact/"
+                href="https://r4nc0x.github.io/es/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/proyectos/</loc>
+    <loc>https://r4nc0x.github.io/es/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/projects/"
+                href="https://r4nc0x.github.io/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/proyectos/"
+                href="https://r4nc0x.github.io/es/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/series/</loc>
+    <loc>https://r4nc0x.github.io/es/proyectos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://r4nc0x.github.io/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/series/"
+                href="https://r4nc0x.github.io/es/proyectos/"
+                />
+  </url><url>
+    <loc>https://r4nc0x.github.io/es/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://r4nc0x.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://r4nc0x.github.io/es/series/"
                 />
   </url>
 </urlset>

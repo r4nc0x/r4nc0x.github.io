@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ftp on R4NC0X</title>
-    <link>http://localhost:1313/tags/ftp/</link>
+    <link>https://r4nc0x.github.io/tags/ftp/</link>
     <description>Recent content in Ftp on R4NC0X</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 02 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r4nc0x.github.io/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB Fawn WriteUp</title>
-      <link>http://localhost:1313/posts/fawn/</link>
+      <link>https://r4nc0x.github.io/posts/fawn/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/fawn/</guid>
-      <description>&lt;h1 id=&#34;fawn--hackthebox&#34;&gt;Fawn &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;System: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Difficulty: &lt;em&gt;Very Easy&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataform: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Fawn/Fawn.webp&#34; alt=&#34;‘Fawn’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Fawn&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the &lt;code&gt;HackTheBox&lt;/code&gt; platform. Fawn is part of the &lt;code&gt;Starting Point&lt;/code&gt; laboratories.&lt;/p&gt;&#xA;&lt;p&gt;To complete this machine run nmap to perform a port scan to the IP address &lt;code&gt;10.129.219.195&lt;/code&gt;, the Fawn machine deals with the &amp;ldquo;FTP&amp;rdquo; protocol so my scan to the machine resulted in an open port 21/TCP since I knew that it is an FTP port, use the command &lt;code&gt;ftp [IpAddress]&lt;/code&gt; I connect to the machine with a default name &lt;code&gt;anonymous&lt;/code&gt; and with a blank password I enter the machine, inside the machine I execute the command &lt;code&gt;ls&lt;/code&gt; To list the contents, the search result gives me a file &lt;code&gt;flag.txt&lt;/code&gt; and with the &lt;code&gt;get&lt;/code&gt; command I download the file to my machine, I do a &lt;code&gt;cat flag.txt&lt;/code&gt; and that&amp;rsquo;s how I get the flag of the machine Fawn&lt;/p&gt;</description>
+      <guid>https://r4nc0x.github.io/posts/fawn/</guid>
+      <description>&lt;h1 id=&#34;fawn--hackthebox&#34;&gt;Fawn &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;System: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Difficulty: &lt;em&gt;Very Easy&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataform: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r4nc0x.github.io/images/Fawn/Fawn.webp&#34; alt=&#34;‘Fawn’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Fawn&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the &lt;code&gt;HackTheBox&lt;/code&gt; platform. Fawn is part of the &lt;code&gt;Starting Point&lt;/code&gt; laboratories.&lt;/p&gt;&#xA;&lt;p&gt;To complete this machine run nmap to perform a port scan to the IP address &lt;code&gt;10.129.219.195&lt;/code&gt;, the Fawn machine deals with the &amp;ldquo;FTP&amp;rdquo; protocol so my scan to the machine resulted in an open port 21/TCP since I knew that it is an FTP port, use the command &lt;code&gt;ftp [IpAddress]&lt;/code&gt; I connect to the machine with a default name &lt;code&gt;anonymous&lt;/code&gt; and with a blank password I enter the machine, inside the machine I execute the command &lt;code&gt;ls&lt;/code&gt; To list the contents, the search result gives me a file &lt;code&gt;flag.txt&lt;/code&gt; and with the &lt;code&gt;get&lt;/code&gt; command I download the file to my machine, I do a &lt;code&gt;cat flag.txt&lt;/code&gt; and that&amp;rsquo;s how I get the flag of the machine Fawn&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

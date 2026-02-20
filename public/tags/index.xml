@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on R4NC0X</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://r4nc0x.github.io/tags/</link>
     <description>Recent content in Tags on R4NC0X</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r4nc0x.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anonymous/Guest Access</title>
-      <link>http://localhost:1313/tags/anonymous/guest-access/</link>
+      <link>https://r4nc0x.github.io/tags/anonymous/guest-access/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/anonymous/guest-access/</guid>
+      <guid>https://r4nc0x.github.io/tags/anonymous/guest-access/</guid>
       <description></description>
     </item>
     <item>
       <title>Databases</title>
-      <link>http://localhost:1313/tags/databases/</link>
+      <link>https://r4nc0x.github.io/tags/databases/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/databases/</guid>
+      <guid>https://r4nc0x.github.io/tags/databases/</guid>
       <description></description>
     </item>
     <item>
       <title>HTB</title>
-      <link>http://localhost:1313/tags/htb/</link>
+      <link>https://r4nc0x.github.io/tags/htb/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/htb/</guid>
+      <guid>https://r4nc0x.github.io/tags/htb/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://r4nc0x.github.io/tags/linux/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://r4nc0x.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine</title>
-      <link>http://localhost:1313/tags/machine/</link>
+      <link>https://r4nc0x.github.io/tags/machine/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machine/</guid>
+      <guid>https://r4nc0x.github.io/tags/machine/</guid>
       <description></description>
     </item>
     <item>
       <title>Reconnaissance</title>
-      <link>http://localhost:1313/tags/reconnaissance/</link>
+      <link>https://r4nc0x.github.io/tags/reconnaissance/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/reconnaissance/</guid>
+      <guid>https://r4nc0x.github.io/tags/reconnaissance/</guid>
       <description></description>
     </item>
     <item>
       <title>Redis</title>
-      <link>http://localhost:1313/tags/redis/</link>
+      <link>https://r4nc0x.github.io/tags/redis/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/redis/</guid>
+      <guid>https://r4nc0x.github.io/tags/redis/</guid>
       <description></description>
     </item>
     <item>
       <title>Vulnerability Assessment</title>
-      <link>http://localhost:1313/tags/vulnerability-assessment/</link>
+      <link>https://r4nc0x.github.io/tags/vulnerability-assessment/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vulnerability-assessment/</guid>
+      <guid>https://r4nc0x.github.io/tags/vulnerability-assessment/</guid>
       <description></description>
     </item>
     <item>
       <title>Protocols</title>
-      <link>http://localhost:1313/tags/protocols/</link>
+      <link>https://r4nc0x.github.io/tags/protocols/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/protocols/</guid>
+      <guid>https://r4nc0x.github.io/tags/protocols/</guid>
       <description></description>
     </item>
     <item>
       <title>Smb</title>
-      <link>http://localhost:1313/tags/smb/</link>
+      <link>https://r4nc0x.github.io/tags/smb/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/smb/</guid>
+      <guid>https://r4nc0x.github.io/tags/smb/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
+      <link>https://r4nc0x.github.io/tags/windows/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>https://r4nc0x.github.io/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>Ftp</title>
-      <link>http://localhost:1313/tags/ftp/</link>
+      <link>https://r4nc0x.github.io/tags/ftp/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ftp/</guid>
+      <guid>https://r4nc0x.github.io/tags/ftp/</guid>
       <description></description>
     </item>
     <item>
       <title>Misconfiguration</title>
-      <link>http://localhost:1313/tags/misconfiguration/</link>
+      <link>https://r4nc0x.github.io/tags/misconfiguration/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/misconfiguration/</guid>
+      <guid>https://r4nc0x.github.io/tags/misconfiguration/</guid>
       <description></description>
     </item>
     <item>
       <title>Telnet</title>
-      <link>http://localhost:1313/tags/telnet/</link>
+      <link>https://r4nc0x.github.io/tags/telnet/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/telnet/</guid>
+      <guid>https://r4nc0x.github.io/tags/telnet/</guid>
       <description></description>
     </item>
     <item>
       <title>Weak Credentials</title>
-      <link>http://localhost:1313/tags/weak-credentials/</link>
+      <link>https://r4nc0x.github.io/tags/weak-credentials/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/weak-credentials/</guid>
+      <guid>https://r4nc0x.github.io/tags/weak-credentials/</guid>
       <description></description>
     </item>
   </channel>

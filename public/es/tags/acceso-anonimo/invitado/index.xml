@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Acceso Anonimo/Invitado on R4NC0X</title>
-    <link>http://localhost:1313/es/tags/acceso-anonimo/invitado/</link>
+    <link>https://r4nc0x.github.io/es/tags/acceso-anonimo/invitado/</link>
     <description>Recent content in Acceso Anonimo/Invitado on R4NC0X</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/es/tags/acceso-anonimo/invitado/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r4nc0x.github.io/es/tags/acceso-anonimo/invitado/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB Redeemer WriteUp</title>
-      <link>http://localhost:1313/es/posts/redeemer/</link>
+      <link>https://r4nc0x.github.io/es/posts/redeemer/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/es/posts/redeemer/</guid>
-      <description>&lt;h1 id=&#34;redeemer--hackthebox&#34;&gt;Redeemer &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Redeemer/Redeemer.webp&#34; alt=&#34;‘Redeemer’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Redeemer&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Redeemer forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar esta maquina utilize nmap para realizar escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.5.10&lt;/code&gt;, La maquina propone el uso del servicio &lt;code&gt;Redis&lt;/code&gt; cuyo protocolo es el &lt;code&gt;6379&lt;/code&gt; ya confirmado que el puerto esta abierto procedi a usar el comando &lt;code&gt;redis-cli -h [DireccionIp]&lt;/code&gt;, con esto ingrese a la maquina y usando el comando &lt;code&gt;INFO&lt;/code&gt; pude analizar que version de redis esta funcionando asi como saber cuantos clientes y keys hay, teniendo toda esta informacion con el uso del comando &lt;code&gt;KEYS *&lt;/code&gt; listo las keys que tiene la maquina, una de las 4 lleva el nombre de &lt;code&gt;flag&lt;/code&gt; por lo que con el comando &lt;code&gt;GET flag&lt;/code&gt; listo el contenido encontrando la bandera y resolviendo la maquina.&lt;/p&gt;</description>
+      <guid>https://r4nc0x.github.io/es/posts/redeemer/</guid>
+      <description>&lt;h1 id=&#34;redeemer--hackthebox&#34;&gt;Redeemer &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r4nc0x.github.io/images/Redeemer/Redeemer.webp&#34; alt=&#34;‘Redeemer’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Redeemer&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Redeemer forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar esta maquina utilize nmap para realizar escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.5.10&lt;/code&gt;, La maquina propone el uso del servicio &lt;code&gt;Redis&lt;/code&gt; cuyo protocolo es el &lt;code&gt;6379&lt;/code&gt; ya confirmado que el puerto esta abierto procedi a usar el comando &lt;code&gt;redis-cli -h [DireccionIp]&lt;/code&gt;, con esto ingrese a la maquina y usando el comando &lt;code&gt;INFO&lt;/code&gt; pude analizar que version de redis esta funcionando asi como saber cuantos clientes y keys hay, teniendo toda esta informacion con el uso del comando &lt;code&gt;KEYS *&lt;/code&gt; listo las keys que tiene la maquina, una de las 4 lleva el nombre de &lt;code&gt;flag&lt;/code&gt; por lo que con el comando &lt;code&gt;GET flag&lt;/code&gt; listo el contenido encontrando la bandera y resolviendo la maquina.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

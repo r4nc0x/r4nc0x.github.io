@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ftp on R4NC0X</title>
-    <link>http://localhost:1313/es/tags/ftp/</link>
+    <link>https://r4nc0x.github.io/es/tags/ftp/</link>
     <description>Recent content in Ftp on R4NC0X</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Tue, 02 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/es/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r4nc0x.github.io/es/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB Fawn WriteUp</title>
-      <link>http://localhost:1313/es/posts/fawn/</link>
+      <link>https://r4nc0x.github.io/es/posts/fawn/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/es/posts/fawn/</guid>
-      <description>&lt;h1 id=&#34;fawn--hackthebox&#34;&gt;Fawn &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Fawn/Fawn.webp&#34; alt=&#34;‘Fawn’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Fawn&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Fawn forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.219.195&lt;/code&gt;, la maquina Fawn trata del protocolo &amp;ldquo;FTP&amp;rdquo; por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando &lt;code&gt;ftp [DireccionIp]&lt;/code&gt; me conecto a la maquina con un nombre predeterminado &lt;code&gt;anonymous&lt;/code&gt; y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando &lt;code&gt;ls&lt;/code&gt; para listar los contenidos, el resultado de la busqueda me arroja un archivo &lt;code&gt;flag.txt&lt;/code&gt; y con el comando &lt;code&gt;get&lt;/code&gt; me dascargo el archivo en mi maquina, hago un &lt;code&gt;cat flag.txt&lt;/code&gt; y asi consigo la bandera de la maquina Fawn&lt;/p&gt;</description>
+      <guid>https://r4nc0x.github.io/es/posts/fawn/</guid>
+      <description>&lt;h1 id=&#34;fawn--hackthebox&#34;&gt;Fawn &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r4nc0x.github.io/images/Fawn/Fawn.webp&#34; alt=&#34;‘Fawn’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Fawn&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Fawn forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.219.195&lt;/code&gt;, la maquina Fawn trata del protocolo &amp;ldquo;FTP&amp;rdquo; por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando &lt;code&gt;ftp [DireccionIp]&lt;/code&gt; me conecto a la maquina con un nombre predeterminado &lt;code&gt;anonymous&lt;/code&gt; y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando &lt;code&gt;ls&lt;/code&gt; para listar los contenidos, el resultado de la busqueda me arroja un archivo &lt;code&gt;flag.txt&lt;/code&gt; y con el comando &lt;code&gt;get&lt;/code&gt; me dascargo el archivo en mi maquina, hago un &lt;code&gt;cat flag.txt&lt;/code&gt; y asi consigo la bandera de la maquina Fawn&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
