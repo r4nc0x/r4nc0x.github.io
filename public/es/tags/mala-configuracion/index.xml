@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mala Configuracion on R4NC0X</title>
+    <link>http://localhost:1313/es/tags/mala-configuracion/</link>
+    <description>Recent content in Mala Configuracion on R4NC0X</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/mala-configuracion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Meow WriteUp</title>
+      <link>http://localhost:1313/es/posts/meow/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/meow/</guid>
+      <description>&lt;h1 id=&#34;meow--hackthebox&#34;&gt;Meow &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Meow/Meow.webp&#34; alt=&#34;‘Meow’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Meow&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Meow forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.202.44&lt;/code&gt; especificamente el puerto 23/tcp, ya que supe que el puerto esta abierto con el servicio telnet usando el comando &lt;code&gt;Telnet [DireccionIp]&lt;/code&gt; me conecte al servidor &lt;code&gt;meow&lt;/code&gt; y proporcionando &lt;code&gt;root&lt;/code&gt; como nombre de dominio logre ingresar al servidor, usando &lt;code&gt;ls&lt;/code&gt; listo los contenidos del servidor y encuentro un archivo &lt;code&gt;flag.txt&lt;/code&gt; con el comando &lt;code&gt;cat&lt;/code&gt; veo el contenido del archivo y asi encuentro la &lt;code&gt;flag&lt;/code&gt; resolviendo esta maquina.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

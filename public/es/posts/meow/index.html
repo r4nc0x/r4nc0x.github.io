@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  HTB Meow WriteUp · R4NC0X
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="R4NC0X">
+<meta name="description" content="HackThebox &#39;Meow&#39; WriteUp">
+<meta name="keywords" content="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTB Meow WriteUp">
+  <meta name="twitter:description" content="HackThebox &#39;Meow&#39; WriteUp">
+
+<meta property="og:url" content="http://localhost:1313/es/posts/meow/">
+  <meta property="og:site_name" content="R4NC0X">
+  <meta property="og:title" content="HTB Meow WriteUp">
+  <meta property="og:description" content="HackThebox &#39;Meow&#39; WriteUp">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-27T00:00:00+00:00">
+    <meta property="article:tag" content="HTB">
+    <meta property="article:tag" content="Maquina">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Telnet">
+    <meta property="article:tag" content="Protocolos">
+    <meta property="article:tag" content="Reconocimiento">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/es/posts/meow/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/avatar.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/es/">
+      R4NC0X
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/about/">r4nc0x</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/posts/">Blogs/WriteUps</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/proyectos/">Proyectos</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/contact/">Contacto</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/posts/meow/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/es/posts/meow/">
+              HTB Meow WriteUp
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-06-27T00:00:00Z">
+                junio 27, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3 minutos de lectura.
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/es/tags/htb/">HTB</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/maquina/">Maquina</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/linux/">Linux</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/telnet/">Telnet</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/protocolos/">Protocolos</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/reconocimiento/">Reconocimiento</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/credenciales-debiles/">Credenciales Debiles</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/mala-configuracion/">Mala Configuracion</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="meow--hackthebox">Meow &ndash; HacktheBox</h1>
+<ul>
+<li>Sistema: <em>Linux</em></li>
+<li>Dificultad: <em>Muy Facil</em></li>
+<li>Plataforma: <em>HacktheBox</em></li>
+</ul>
+<p><img src="/images/Meow/Meow.webp" alt="‘Meow’ Avatar"></p>
+<hr>
+<h2 id="resumen">Resumen</h2>
+<p>&ldquo;Meow&rdquo; es una maquina de dificultad &ldquo;Muy Facil&rdquo; de la plataforma <code>HackTheBox</code>. Meow forma parte de los laboratorios de <code>Punto de Partida</code>.</p>
+<p>Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip <code>10.129.202.44</code> especificamente el puerto 23/tcp, ya que supe que el puerto esta abierto con el servicio telnet usando el comando <code>Telnet [DireccionIp]</code> me conecte al servidor <code>meow</code> y proporcionando <code>root</code> como nombre de dominio logre ingresar al servidor, usando <code>ls</code> listo los contenidos del servidor y encuentro un archivo <code>flag.txt</code> con el comando <code>cat</code> veo el contenido del archivo y asi encuentro la <code>flag</code> resolviendo esta maquina.</p>
+<hr>
+<h2 id="procedimiento">Procedimiento</h2>
+<p>Para atacar la maquina meow se necesita estar en la misma red, conectese a la VPN de <code>Punto de Partida</code> usando una de las siguientes opciones:</p>
+<p><img src="/images/Meow/Anexo1.png" alt="Anexo1"></p>
+<p>He utilizado el metodo <code>OVPN</code> y Kali Linux como sistema principal para este proyecto, Descargue el archivo (.ovpn):</p>
+<p><img src="/images/Meow/Anexo2.png" alt="Anexo2"></p>
+<p>Abri una terminal y ejecute el siguiente comando:</p>
+<ul>
+<li>
+<p><strong>sudo openvpn starting_point_R4NC0X.ovpn</strong></p>
+</li>
+<li>
+<p><strong>El nombre <code>starting_point_R4NC0X.ovpn</code> debe ser remplazado por el nombre del archivo que descago en su maquina</strong></p>
+</li>
+</ul>
+<p><img src="/images/Meow/Anexo3.png" alt="Anexo3"></p>
+<p>Actualice la pagina en el navegador para comprobar la nueva conexion y activamos la maquina haciendo clic en <code>Maquina de Aparicion</code></p>
+<p><img src="/images/Meow/Anexo4.png" alt="Anexo4"></p>
+<p>La maquina ya se encuentra activa y ahora muestra la direccion ip</p>
+<p><img src="/images/Meow/Anexo5.png" alt="Anexo5"></p>
+<p>Ahora resuelvo todas las tareas de la maquina, algunas de las tareas son pistas para resolver esta maquina.</p>
+<ul>
+<li><strong>Tarea 1 ¿Que significa las siglas VM?</strong></li>
+</ul>
+<p><code>Virtual Machine</code></p>
+<ul>
+<li><strong>Tarea 2 ¿Que herramientas utilizamos para interactuar con el sistema operativo para poder emitir comandos a traves de la linea de comandos, como por ejemplo el de iniciar nuestra conexion VPN? Tambien se la conoce como consola o shell</strong></li>
+</ul>
+<p><code>Terminal</code></p>
+<ul>
+<li><strong>Tarea 3 ¿Que servicio utilizamos para formar nuestra conexion VPN en los laboratorios HTB?</strong></li>
+</ul>
+<p><code>openvpn</code></p>
+<ul>
+<li><strong>Tarea 4 ¿Que herramienta utilizamos para probar nuestra conexion con el objetivo con una solicitud de eco ICPM?</strong></li>
+</ul>
+<p><code>Ping</code></p>
+<ul>
+<li><strong>Tarea 5 ¿Como se llama la herramienta mas comun para encontrar puertos abiertos en un objetivo</strong></li>
+</ul>
+<p><code>Nmap</code></p>
+<ul>
+<li><strong>Tarea 6 ¿Que servicio identificamos en el puerto 23/tcp durante nuestros escaneos?</strong></li>
+</ul>
+<p><code>Telnet</code></p>
+<ul>
+<li><strong>Tarea 7 ¿Que nombre de usuario puede iniciar sesion en el objetivo a traves de telnet con una contraseña en blanco?</strong></li>
+</ul>
+<p><code>Root</code></p>
+<ul>
+<li><strong>Enviar Bandera Root</strong>
+Para poder encontrar la bandera realice un escaneo a la ip de la maquina usando la herramienta <code>Nmap</code></li>
+</ul>
+<p><img src="/images/Meow/Anexo6.png" alt="Anexo6"></p>
+<p>Observe que en el puerto 23 esta abierto el servicio Telnet, entonces escribo el comando <code>Telnet</code> con la dirrecion ip.</p>
+<p><img src="/images/Meow/Anexo7.png" alt="Anexo7"></p>
+<p>Usando el nombre de usuario predeterminado en el <code>Meow login</code> podremos acceder a la maquina <code>Meow</code></p>
+<p><img src="/images/Meow/Anexo8.png" alt="Anexo8"></p>
+<p>Usando el comando <code>ls</code> vamos a listar todos los elementos que contiene el directorio <code>root@meow</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@meow:ls
+</span></span><span class="line"><span class="cl">flag.txt snap
+</span></span><span class="line"><span class="cl">root@meow:cat flag.txt
+</span></span><span class="line"><span class="cl">b40abdfe23665f766f9c61ecba8a4c19
+</span></span></code></pre></div><p>La bandera ya fue encontrada, la copio y la pego en <code>Enviar bandera</code>
+Una ves enviada la bandera salio un mensaje diciendo <code>Meow has been Pwned</code></p>
+<hr>
+<h2 id="maquina-completada-">Maquina Completada :)</h2>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2026
+     R4NC0X 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

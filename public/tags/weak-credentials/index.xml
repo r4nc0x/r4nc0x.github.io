@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weak Credentials on R4NC0X</title>
+    <link>http://localhost:1313/tags/weak-credentials/</link>
+    <description>Recent content in Weak Credentials on R4NC0X</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/weak-credentials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Meow WriteUp</title>
+      <link>http://localhost:1313/posts/meow/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meow/</guid>
+      <description>&lt;h1 id=&#34;meow--hackthebox&#34;&gt;Meow &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;System: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Difficulty: &lt;em&gt;Very Easy&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataform: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Meow/Meow.webp&#34; alt=&#34;‘Meow’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Meow&amp;rdquo; is a &amp;ldquo;Very Easy&amp;rdquo; difficulty machine from the &lt;code&gt;HackTheBox&lt;/code&gt; platform. Meow is part of the &lt;code&gt;Starting Point&lt;/code&gt; laboratories.&lt;/p&gt;&#xA;&lt;p&gt;To complete the machine run nmap to perform a port scan to the IP address &lt;code&gt;10.129.202.44&lt;/code&gt; specifically port 23/tcp, since I knew that the port is open with the telnet service using the command &lt;code&gt;Telnet [IPAddress]&lt;/code&gt; me connect to the &lt;code&gt;meow&lt;/code&gt; server and providing &lt;code&gt;root&lt;/code&gt; as the domain name I manage to enter the server, using &lt;code&gt;ls&lt;/code&gt; I list the contents of the server and find a file &lt;code&gt;flag.txt&lt;/code&gt; with the command &lt;code&gt;cat&lt;/code&gt; I see the contents of the file and This is how I find the &lt;code&gt;flag&lt;/code&gt; solving this machine.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

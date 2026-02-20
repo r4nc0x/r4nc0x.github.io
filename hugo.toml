@@ -1,0 +1,106 @@
+baseURL = "https://r4nc0x.github.io/"
+title = "R4NC0X"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+
+[pagination]
+  pagerSize = 6
+
+[services]
+  [services.disqus]
+  # shortname = "yourdiscussshortname"
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+author = "R4NC0X"
+description = "HACKING ETICAL"
+keywords = "blog,developer,personal"
+info = ["Hacking Etical", "Red Teamer", "Penetration Tester"]
+avatarURL = "images/avatar.png"
+faviconSVG = "/images/avatar.svg"
+dateFormat = "January 2, 2006"
+since = 2019
+commit = "https://github.com/luizdepra/hugo-coder/tree/"
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+customCSS = []
+customSCSS = []
+customJS = []
+customRemoteJS = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/r4nc0x/"
+
+[[params.social]]
+name = "HackTheBox"
+icon = "fa fa-cube fa-2x"
+weight = 7
+url = "https://app.hackthebox.com/profile/#1995208"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "r4nc0x"
+weight = 1
+url = "about/"
+
+[[languages.en.menu.main]]
+name = "Post/WriteUps"
+weight = 2
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Contact"
+weight = 5
+url = "contact/"
+
+[languages.es]
+languageName = ":chile:"
+title = "R4NC0X"
+
+[languages.es.params]
+author = "R4NC0X"
+info = ["Hacker Etico", "Equipo Rojo", "Probador de Penetración"]
+description = ""
+keywords = ""
+
+[[languages.es.menu.main]]
+name = "r4nc0x"
+weight = 1
+url = "about/"
+
+[[languages.es.menu.main]]
+name = "Blogs/WriteUps"
+weight = 2
+url = "posts/"
+
+[[languages.es.menu.main]]
+name = "Proyectos"
+weight = 3
+url = "proyectos/"
+
+[[languages.es.menu.main]]
+name = "Contacto"
+weight = 5
+url = "contact/"

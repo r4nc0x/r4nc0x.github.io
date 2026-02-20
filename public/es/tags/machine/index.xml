@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine on R4NC0X</title>
+    <link>http://localhost:1313/es/tags/machine/</link>
+    <description>Recent content in Machine on R4NC0X</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/machine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Fawn WriteUp</title>
+      <link>http://localhost:1313/es/posts/fawn/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/fawn/</guid>
+      <description>Fawn &amp;ndash; HacktheBox Link to heading Sistema: Linux Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Fawn&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma HackTheBox. Fawn forma parte de los laboratorios de Punto de Partida. Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip 10.129.219.195, la maquina Fawn trata del protocolo &amp;ldquo;FTP&amp;rdquo; por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando ftp [DireccionIp] me conecto a la maquina con un nombre predeterminado anonymous y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando ls para listar los contenidos, el resultado de la busqueda me arroja un archivo flag.</description>
+    </item>
+    <item>
+      <title>HTB Meow WriteUp</title>
+      <link>http://localhost:1313/es/posts/meow/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/meow/</guid>
+      <description>Meow &amp;ndash; HacktheBox Link to heading Sistema: Linux Dificultad: Muy Facil Plataforma: HacktheBox Resumen Link to heading &amp;ldquo;Meow&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma HackTheBox. Meow forma parte de los laboratorios de Punto de Partida. Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip 10.129.202.44 especificamente el puerto 23/tcp, ya que supe que el puerto esta abierto con el servicio telnet usando el comando Telnet [DireccionIp] me conecte al servidor meow y proporcionando root como nombre de dominio logre ingresar al servidor, usando ls listo los contenidos del servidor y encuentro un archivo flag.</description>
+    </item>
+  </channel>
+</rss>

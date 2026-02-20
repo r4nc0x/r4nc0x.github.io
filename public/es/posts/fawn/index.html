@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  HTB Fawn WriteUp · R4NC0X
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="R4NC0X">
+<meta name="description" content="HackThebox &#39;Fawn&#39; WriteUp">
+<meta name="keywords" content="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTB Fawn WriteUp">
+  <meta name="twitter:description" content="HackThebox &#39;Fawn&#39; WriteUp">
+
+<meta property="og:url" content="http://localhost:1313/es/posts/fawn/">
+  <meta property="og:site_name" content="R4NC0X">
+  <meta property="og:title" content="HTB Fawn WriteUp">
+  <meta property="og:description" content="HackThebox &#39;Fawn&#39; WriteUp">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-02T00:00:00+00:00">
+    <meta property="article:tag" content="HTB">
+    <meta property="article:tag" content="Maquina">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Ftp">
+    <meta property="article:tag" content="Protocolos">
+    <meta property="article:tag" content="Reconocimiento">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/es/posts/fawn/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/avatar.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/es/">
+      R4NC0X
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/about/">r4nc0x</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/posts/">Blogs/WriteUps</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/proyectos/">Proyectos</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/es/contact/">Contacto</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/posts/fawn/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/es/posts/fawn/">
+              HTB Fawn WriteUp
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-07-02T00:00:00Z">
+                julio 2, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3 minutos de lectura.
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/es/tags/htb/">HTB</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/maquina/">Maquina</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/linux/">Linux</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/ftp/">Ftp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/protocolos/">Protocolos</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/reconocimiento/">Reconocimiento</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/es/tags/acceso-anonimo/invitados/">Acceso Anonimo/Invitados</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="fawn--hackthebox">Fawn &ndash; HacktheBox</h1>
+<ul>
+<li>Sistema: <em>Linux</em></li>
+<li>Dificultad: <em>Muy Facil</em></li>
+<li>Plataforma: <em>HacktheBox</em></li>
+</ul>
+<p><img src="/images/Fawn/Fawn.webp" alt="‘Fawn’ Avatar"></p>
+<hr>
+<h2 id="resumen">Resumen</h2>
+<p>&ldquo;Fawn&rdquo; es una maquina de dificultad &ldquo;Muy Facil&rdquo; de la plataforma <code>HackTheBox</code>. Fawn forma parte de los laboratorios de <code>Punto de Partida</code>.</p>
+<p>Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip <code>10.129.219.195</code>, la maquina Fawn trata del protocolo &ldquo;FTP&rdquo; por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando <code>ftp [DireccionIp]</code> me conecto a la maquina con un nombre predeterminado <code>anonymous</code> y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando <code>ls</code> para listar los contenidos, el resultado de la busqueda me arroja un archivo <code>flag.txt</code> y con el comando <code>get</code> me dascargo el archivo en mi maquina, hago un <code>cat flag.txt</code> y asi consigo la bandera de la maquina Fawn</p>
+<hr>
+<h2 id="procedimiento">Procedimiento</h2>
+<p>Empezamos resolviendo las Tareas de la maquina, algunas de las tareas son pistas para resolver la maquina.</p>
+<ul>
+<li><strong>Tarea 1 ¿Qué significa el acrónimo de 3 letras FTP?</strong></li>
+</ul>
+<p><code>Protocolo de Transferencia de Archivos</code></p>
+<ul>
+<li><strong>Tarea 2 ¿En qué puerto escucha habitualmente el servicio FTP?</strong></li>
+</ul>
+<p><code>21</code></p>
+<ul>
+<li><strong>Tarea 3 ¿Qué acrónimo se utiliza para la versión de FTP protegida mediante la ejecución del protocolo SSH?</strong></li>
+</ul>
+<p><code>sftp</code></p>
+<ul>
+<li><strong>Tarea 4 ¿Cuál es el comando que podemos usar para enviar una solicitud de eco ICMP para probar nuestra conexión con el objetivo?</strong></li>
+</ul>
+<p><code>Ping</code></p>
+<ul>
+<li><strong>Tarea 5 Según sus escaneos, ¿qué versión de FTP se ejecuta en el destino?</strong></li>
+</ul>
+<p><code>vsftpd 3.0.3</code></p>
+<ul>
+<li><strong>Tarea 6 Según sus análisis, ¿qué tipo de sistema operativo se ejecuta en el objetivo?</strong></li>
+</ul>
+<p><code>Unix</code></p>
+<ul>
+<li><strong>Tarea 7 ¿Cuál es el comando que debemos ejecutar para mostrar el menú de ayuda del cliente &lsquo;ftp&rsquo;?</strong></li>
+</ul>
+<p><code>ftp -h</code></p>
+<ul>
+<li><strong>Tarea 8 ¿Cuál es el nombre de usuario que se utiliza en FTP cuando desea iniciar sesión sin tener una cuenta?</strong></li>
+</ul>
+<p><code>Anonymous</code></p>
+<ul>
+<li><strong>Tarea 9 ¿Cuál es el código de respuesta que recibimos para el mensaje FTP &lsquo;Inicio de sesión exitoso&rsquo;?</strong></li>
+</ul>
+<p><code>230</code></p>
+<ul>
+<li><strong>Tarea 10 Hay un par de comandos que podemos usar para enumerar los archivos y directorios disponibles en el servidor FTP. Uno es dir. ¿Cuál es la otra forma común de enumerar archivos en un sistema Linux?</strong></li>
+</ul>
+<p><code>ls</code></p>
+<ul>
+<li><strong>Tarea 11 ¿Cuál es el comando utilizado para descargar el archivo que encontramos en el servidor FTP?</strong></li>
+</ul>
+<p><code>get</code></p>
+<ul>
+<li><strong>Enviar Bandera Root</strong></li>
+</ul>
+<p>Para poder encontrar la bandera realice un escaneo a la ip de la maquina usando la herramienta <code>Nmap</code>.</p>
+<p><img src="/images/Fawn/Anexo1.png" alt="Anexo1"></p>
+<p>Observe que hay un unico puerto abierto <code>21/tcp</code>, es un servicio <code>FTP</code>, el escaneo tambien nos muestra datos importantes como la version, login, y permisos.</p>
+<p><img src="/images/Fawn/Anexo2.png" alt="Anexo2"></p>
+<p>Usando el comando <code>ftp [DireccionIp]</code> ingreso y me pide un nombre de usuario, ftp proporciona un usuario por defecto, por lo que usando el nombre <code>anonymous</code> y con una contraseña vacia logro ingresar a la maquina.</p>
+<p><img src="/images/Fawn/Anexo3.png" alt="Anexo3"></p>
+<p>Ya dentro de la maquina use <code>ls</code> para listar contenidos y observe que hay un archivo llamado <code>flag.txt</code> con el comando <code>get</code> me descargo en mi maquina.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ftp&gt; ls
+</span></span><span class="line"><span class="cl"><span class="m">229</span> Entering Extended Passive Mode <span class="o">(||</span><span class="p">|</span>9137<span class="p">|</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="m">150</span> Here comes the directory listing.
+</span></span><span class="line"><span class="cl">-rw-r--r--    <span class="m">1</span> <span class="m">0</span>        <span class="m">0</span>              <span class="m">32</span> Jun <span class="m">04</span>  <span class="m">2021</span> flag.txt
+</span></span><span class="line"><span class="cl"><span class="m">226</span> Directory send OK.
+</span></span><span class="line"><span class="cl">ftp&gt; get flag.txt
+</span></span><span class="line"><span class="cl">local: flag.txt remote: flag.txt
+</span></span><span class="line"><span class="cl"><span class="m">229</span> Entering Extended Passive Mode <span class="o">(||</span><span class="p">|</span>39526<span class="p">|</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="m">150</span> Opening BINARY mode data connection <span class="k">for</span> flag.txt <span class="o">(</span><span class="m">32</span> bytes<span class="o">)</span>.
+</span></span><span class="line"><span class="cl">100% <span class="p">|</span>*************************************************************************************************************************************************************************************************<span class="p">|</span>    <span class="m">32</span>       21.25 KiB/s    00:00 ETA
+</span></span><span class="line"><span class="cl"><span class="m">226</span> Transfer complete.
+</span></span><span class="line"><span class="cl"><span class="m">32</span> bytes received in 00:00 <span class="o">(</span>0.14 KiB/s<span class="o">)</span>
+</span></span></code></pre></div><p>En mi maquina con el comando <code>cat</code> descubro la flag.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">❯ cat flag.txt
+</span></span><span class="line"><span class="cl">───────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</span></span><span class="line"><span class="cl">       │ File: flag.txt
+</span></span><span class="line"><span class="cl">───────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</span></span><span class="line"><span class="cl">   <span class="m">1</span>   │ 035db21c88152006**************
+</span></span></code></pre></div><p>Ingreso la flag en la ultima Tarea de la maquina <code>Enviar bandera</code>.</p>
+<p>Una ves enviada la bandera salio un mensaje diciendo <code>Fawn has been Pwned</code>.</p>
+<p><img src="/images/Fawn/Anexo4.png" alt="Anexo4"></p>
+<hr>
+<h2 id="maquina-completada-">Maquina Completada :)</h2>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2026
+     R4NC0X 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

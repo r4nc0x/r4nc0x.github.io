@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R4NC0X</title>
+    <link>http://localhost:1313/es/</link>
+    <description>Recent content on R4NC0X</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Redeemer WriteUp</title>
+      <link>http://localhost:1313/es/posts/redeemer/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/redeemer/</guid>
+      <description>&lt;h1 id=&#34;redeemer--hackthebox&#34;&gt;Redeemer &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Redeemer/Redeemer.webp&#34; alt=&#34;‘Redeemer’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Redeemer&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Redeemer forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar esta maquina utilize nmap para realizar escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.5.10&lt;/code&gt;, La maquina propone el uso del servicio &lt;code&gt;Redis&lt;/code&gt; cuyo protocolo es el &lt;code&gt;6379&lt;/code&gt; ya confirmado que el puerto esta abierto procedi a usar el comando &lt;code&gt;redis-cli -h [DireccionIp]&lt;/code&gt;, con esto ingrese a la maquina y usando el comando &lt;code&gt;INFO&lt;/code&gt; pude analizar que version de redis esta funcionando asi como saber cuantos clientes y keys hay, teniendo toda esta informacion con el uso del comando &lt;code&gt;KEYS *&lt;/code&gt; listo las keys que tiene la maquina, una de las 4 lleva el nombre de &lt;code&gt;flag&lt;/code&gt; por lo que con el comando &lt;code&gt;GET flag&lt;/code&gt; listo el contenido encontrando la bandera y resolviendo la maquina.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTB Dancing WriteUp</title>
+      <link>http://localhost:1313/es/posts/dancing/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/dancing/</guid>
+      <description>&lt;h1 id=&#34;dancing--hackthebox&#34;&gt;Dancing &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Windows&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Dancing/Dancing.png&#34; alt=&#34;‘Dancing’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Dancing&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Dancing forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.22.109&lt;/code&gt;, la maquina nos propone el uso de un servicio que es &lt;code&gt;SMB&lt;/code&gt; [Server Message Block] entonces supe que mi escaneo tendria que enfocarse en el puerto &lt;code&gt;445&lt;/code&gt;. Ya que supe que servicio esta abierto usando el comando &lt;code&gt;smbclient -L [DireccionIp]&lt;/code&gt; liste las Acciones de la maquina y procedi a tratar de ingresar en cada una de ellas con el comando &lt;code&gt;smbclient -N \\\\10.129.22.109\\[Sharename]&lt;/code&gt;, la unica accion a la que pude ingresar sin contraseña fue &lt;code&gt;WorkShares&lt;/code&gt;. Ya dentro listo con &lt;code&gt;dir&lt;/code&gt; los contenidos y encuentro que hay dos directorios &lt;code&gt;Amy.J&lt;/code&gt; y &lt;code&gt;James.P&lt;/code&gt; ingreso al directorio de &lt;code&gt;Amy.J&lt;/code&gt; usando el comando &lt;code&gt;cd&lt;/code&gt; procedi a revisar sus contenidos y no encontre la flag por lo que regrese al directorio principal usando &lt;code&gt;cd ..&lt;/code&gt; y procedi a ingresar al directorio &lt;code&gt;James.P&lt;/code&gt; haciendo &lt;code&gt;dir&lt;/code&gt; encuentro un archivo &lt;code&gt;flag.txt&lt;/code&gt;, usando el comando &lt;code&gt;more flag.txt&lt;/code&gt; listo el contenido encontrando la bandera y resolviendo la maquina.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTB Fawn WriteUp</title>
+      <link>http://localhost:1313/es/posts/fawn/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/fawn/</guid>
+      <description>&lt;h1 id=&#34;fawn--hackthebox&#34;&gt;Fawn &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Fawn/Fawn.webp&#34; alt=&#34;‘Fawn’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Fawn&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Fawn forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar esta maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.219.195&lt;/code&gt;, la maquina Fawn trata del protocolo &amp;ldquo;FTP&amp;rdquo; por lo que mi escaneo a la maquina dio como resultado un puerto abierto 21/TCP ya que sabia que se trata de un puerto FTP use el comando &lt;code&gt;ftp [DireccionIp]&lt;/code&gt; me conecto a la maquina con un nombre predeterminado &lt;code&gt;anonymous&lt;/code&gt; y con una contraseña en blanco ingreso a la maquina, dentro de la maquina ejecuto el comando &lt;code&gt;ls&lt;/code&gt; para listar los contenidos, el resultado de la busqueda me arroja un archivo &lt;code&gt;flag.txt&lt;/code&gt; y con el comando &lt;code&gt;get&lt;/code&gt; me dascargo el archivo en mi maquina, hago un &lt;code&gt;cat flag.txt&lt;/code&gt; y asi consigo la bandera de la maquina Fawn&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTB Meow WriteUp</title>
+      <link>http://localhost:1313/es/posts/meow/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/meow/</guid>
+      <description>&lt;h1 id=&#34;meow--hackthebox&#34;&gt;Meow &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Linux&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Meow/Meow.webp&#34; alt=&#34;‘Meow’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Meow&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Meow forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.202.44&lt;/code&gt; especificamente el puerto 23/tcp, ya que supe que el puerto esta abierto con el servicio telnet usando el comando &lt;code&gt;Telnet [DireccionIp]&lt;/code&gt; me conecte al servidor &lt;code&gt;meow&lt;/code&gt; y proporcionando &lt;code&gt;root&lt;/code&gt; como nombre de dominio logre ingresar al servidor, usando &lt;code&gt;ls&lt;/code&gt; listo los contenidos del servidor y encuentro un archivo &lt;code&gt;flag.txt&lt;/code&gt; con el comando &lt;code&gt;cat&lt;/code&gt; veo el contenido del archivo y asi encuentro la &lt;code&gt;flag&lt;/code&gt; resolviendo esta maquina.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>R4NC0X</title>
+      <link>http://localhost:1313/es/about/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/about/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;❯ whoami&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  r4nc0x&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/avatar.png&#34; alt=&#34;My Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hola, mi nombre es Steven o también conocido como &amp;ldquo;r4nc0x&amp;rdquo;. Me gradué del bachillerato técnico y decidí enfocarme en lo que más me gusta que es la seguridad informática.&lt;/p&gt;&#xA;&lt;p&gt;Comencé a practicar de forma independiente usando todo lo que tenía a mi disposición como internet y libros, hasta que decidí ingresar a una academia de hacking &lt;a href=&#34;https://hack4u.io/&#34;&gt;Hack4u&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Actualmente voy a empezar a entrenar con la herramienta &lt;a href=&#34;https://www.hackthebox.com/&#34;&gt;HackTheBox (HTB)&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contacto</title>
+      <link>http://localhost:1313/es/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/contact/</guid>
+      <description>&lt;p&gt;Enviame un correo a:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;mailto:stevenguzman.cars@gmail.com&#34;&gt;stevenguzman.cars@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Proyectos</title>
+      <link>http://localhost:1313/es/proyectos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/proyectos/</guid>
+      <description>&lt;p&gt;Hola amigos, estuve un tiempo fuera de mi laboratorio hacking, pero en el camino trabaje en proyectos nuevos que espero les guste, Saludos :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

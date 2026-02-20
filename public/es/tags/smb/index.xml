@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smb on R4NC0X</title>
+    <link>http://localhost:1313/es/tags/smb/</link>
+    <description>Recent content in Smb on R4NC0X</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/smb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Dancing WriteUp</title>
+      <link>http://localhost:1313/es/posts/dancing/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/posts/dancing/</guid>
+      <description>&lt;h1 id=&#34;dancing--hackthebox&#34;&gt;Dancing &amp;ndash; HacktheBox&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sistema: &lt;em&gt;Windows&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Dificultad: &lt;em&gt;Muy Facil&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plataforma: &lt;em&gt;HacktheBox&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Dancing/Dancing.png&#34; alt=&#34;‘Dancing’ Avatar&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Dancing&amp;rdquo; es una maquina de dificultad &amp;ldquo;Muy Facil&amp;rdquo; de la plataforma &lt;code&gt;HackTheBox&lt;/code&gt;. Dancing forma parte de los laboratorios de &lt;code&gt;Punto de Partida&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip &lt;code&gt;10.129.22.109&lt;/code&gt;, la maquina nos propone el uso de un servicio que es &lt;code&gt;SMB&lt;/code&gt; [Server Message Block] entonces supe que mi escaneo tendria que enfocarse en el puerto &lt;code&gt;445&lt;/code&gt;. Ya que supe que servicio esta abierto usando el comando &lt;code&gt;smbclient -L [DireccionIp]&lt;/code&gt; liste las Acciones de la maquina y procedi a tratar de ingresar en cada una de ellas con el comando &lt;code&gt;smbclient -N \\\\10.129.22.109\\[Sharename]&lt;/code&gt;, la unica accion a la que pude ingresar sin contraseña fue &lt;code&gt;WorkShares&lt;/code&gt;. Ya dentro listo con &lt;code&gt;dir&lt;/code&gt; los contenidos y encuentro que hay dos directorios &lt;code&gt;Amy.J&lt;/code&gt; y &lt;code&gt;James.P&lt;/code&gt; ingreso al directorio de &lt;code&gt;Amy.J&lt;/code&gt; usando el comando &lt;code&gt;cd&lt;/code&gt; procedi a revisar sus contenidos y no encontre la flag por lo que regrese al directorio principal usando &lt;code&gt;cd ..&lt;/code&gt; y procedi a ingresar al directorio &lt;code&gt;James.P&lt;/code&gt; haciendo &lt;code&gt;dir&lt;/code&gt; encuentro un archivo &lt;code&gt;flag.txt&lt;/code&gt;, usando el comando &lt;code&gt;more flag.txt&lt;/code&gt; listo el contenido encontrando la bandera y resolviendo la maquina.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  HTB Dancing WriteUp · R4NC0X
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="R4NC0X">
+<meta name="description" content="HackThebox &#39;Dancing&#39; WriteUp">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTB Dancing WriteUp">
+  <meta name="twitter:description" content="HackThebox &#39;Dancing&#39; WriteUp">
+
+<meta property="og:url" content="http://localhost:1313/posts/dancing/">
+  <meta property="og:site_name" content="R4NC0X">
+  <meta property="og:title" content="HTB Dancing WriteUp">
+  <meta property="og:description" content="HackThebox &#39;Dancing&#39; WriteUp">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-03T00:00:00+00:00">
+    <meta property="article:tag" content="HTB">
+    <meta property="article:tag" content="Machine">
+    <meta property="article:tag" content="Windows">
+    <meta property="article:tag" content="Protocols">
+    <meta property="article:tag" content="Smb">
+    <meta property="article:tag" content="Reconnaissance">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/dancing/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/avatar.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      R4NC0X
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">r4nc0x</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Post/WriteUps</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/es/posts/dancing/">🇨🇱</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/dancing/">
+              HTB Dancing WriteUp
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-07-03T00:00:00Z">
+                July 3, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/htb/">HTB</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/machine/">Machine</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/windows/">Windows</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/protocols/">Protocols</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/smb/">Smb</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/reconnaissance/">Reconnaissance</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/anonymous/guest-access/">Anonymous/Guest Access</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="dancing--hackthebox">Dancing &ndash; HacktheBox</h1>
+<ul>
+<li>System: <em>Windows</em></li>
+<li>Difficulty: <em>Very Easy</em></li>
+<li>Plataform: <em>HacktheBox</em></li>
+</ul>
+<p><img src="/images/Dancing/Dancing.png" alt="‘Dancing’ Avatar"></p>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>&ldquo;Dancing&rdquo; is a &ldquo;Very Easy&rdquo; difficulty machine from the <code>HackTheBox</code> platform. Dancing is part of the <code>Starting Point</code> laboratories.</p>
+<p>To complete the machine, run nmap to perform a port scan to the IP address <code>10.129.22.109</code>, the machine proposes the use of a service that is <code>SMB</code> [Server Message Block] so I knew that my scan would have to focus on port <code>445</code>. Since I knew which service is open using the command <code>smbclient -L [IpAddress]</code>, I listed the machine&rsquo;s Actions and proceeded to try to enter each of them with the command <code>smbclient -N \\\\10.129.22.109\ \[Sharename]</code>, the only action I could log into without a password was <code>WorkShares</code>. Once inside, ready with <code>dir</code> the contents and I find that there are two directories <code>Amy.J</code> and <code>James.P</code>, I entered the <code>Amy.J</code> directory using the <code>cd</code> command, I proceeded to review its contents and I did not find the flag so I went back to the main directory using <code>cd ..</code> and proceeded to enter the <code>James.P</code> directory by doing <code>dir</code> I found a file <code>flag.txt</code>, using the command <code>more flag.txt</code> ready the content finding the flag and solving the machine.</p>
+<hr>
+<h2 id="procedure">Procedure</h2>
+<p>Start by solving the Machine Tasks, some of the tasks are clues to solve the machine.</p>
+<ul>
+<li><strong>Task 1 What does the three-letter acronym SMB mean?</strong></li>
+</ul>
+<p><code>server message block</code></p>
+<ul>
+<li><strong>Task 2 What port does SMB operate on?</strong></li>
+</ul>
+<p><code>445</code></p>
+<ul>
+<li><strong>Task 3 What is the service name for port 445 that appeared in our Nmap scan?</strong></li>
+</ul>
+<p><code>microsoft-ds</code></p>
+<ul>
+<li><strong>Task 4 What is the &lsquo;flag&rsquo; or &lsquo;switch&rsquo; that we can use with the smbclient utility to &rsquo;list&rsquo; the actions available in Dancing?</strong></li>
+</ul>
+<p><code>-L</code></p>
+<ul>
+<li><strong>Task 5 How many actions are there in Dancing?</strong></li>
+</ul>
+<p><code>4</code></p>
+<ul>
+<li><strong>Task 6 What is the name of the share that we can finally access with a blank password?</strong></li>
+</ul>
+<p><code>WorkShares</code></p>
+<ul>
+<li><strong>Task 7 What is the command that we can use within the SMB shell to download the files we find?</strong></li>
+</ul>
+<p><code>get</code></p>
+<ul>
+<li><strong>Send Root Flag</strong></li>
+</ul>
+<p>To find the flag perform a port scan to the machine&rsquo;s IP address using the <code>nmap</code> tool.</p>
+<p><img src="/images/Dancing/Anexo1.png" alt="Anexo1"></p>
+<p>How to scan port <code>445</code> of the machine only shows me the data of the <code>microsoft-ds</code> service.</p>
+<p><img src="/images/Dancing/Anexo2.png" alt="Anexo2"></p>
+<p>Using the command <code>smbclient -L [IpAddress]</code> list all the machine&rsquo;s Actions to see which of the 4 shown can be accessed without a password.</p>
+<p><img src="/images/Dancing/Anexo3.png" alt="Anexo3"></p>
+<p>Since I found the Action that allows me to log in without a password, use the command <code>smbclient -N \\\\10.129.22.109\\WorkShares</code>.</p>
+<p><img src="/images/Dancing/Anexo4.png" alt="Anexo4"></p>
+<p>Once inside I proceed to list all the contents of the main directory with the <code>dir</code> command, finding that there are two directories.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">smb: <span class="se">\&gt;</span> dir
+</span></span><span class="line"><span class="cl">  .                                   D        <span class="m">0</span>  Mon Mar <span class="m">29</span> 03:22:01 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  ..                                  D        <span class="m">0</span>  Mon Mar <span class="m">29</span> 03:22:01 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  Amy.J                               D        <span class="m">0</span>  Mon Mar <span class="m">29</span> 04:08:24 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  James.P                             D        <span class="m">0</span>  Thu Jun  <span class="m">3</span> 03:38:03 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="m">5114111</span> blocks of size 4096. <span class="m">1753536</span> blocks available
+</span></span><span class="line"><span class="cl">smb: <span class="se">\&gt;</span> 
+</span></span></code></pre></div><p>First I enter the <code>Amy.J</code> directory with the <code>cd</code> command and proceed to list all the contents found in it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">smb: <span class="se">\&gt;</span> <span class="nb">cd</span> Amy.J
+</span></span><span class="line"><span class="cl">smb: <span class="se">\A</span>my.J<span class="se">\&gt;</span> dir
+</span></span><span class="line"><span class="cl">  .                                   D        <span class="m">0</span>  Mon Mar <span class="m">29</span> 04:08:24 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  ..                                  D        <span class="m">0</span>  Mon Mar <span class="m">29</span> 04:08:24 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  worknotes.txt                       A       <span class="m">94</span>  Fri Mar <span class="m">26</span> 06:00:37 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="m">5114111</span> blocks of size 4096. <span class="m">1753520</span> blocks available
+</span></span><span class="line"><span class="cl">smb: <span class="se">\A</span>my.J<span class="se">\&gt;</span> 
+</span></span></code></pre></div><p>I find a file called <code>worknotes.txt</code> and with the <code>more</code> command I read the contents of the file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- start apache server on the linux machine
+</span></span><span class="line"><span class="cl">- secure the ftp server
+</span></span><span class="line"><span class="cl">- setup winrm on dancing 
+</span></span></code></pre></div><p>The <code>worknotes.txt</code> file did not contain the flag of this machine so with the <code>cd ..</code> command I returned to the main directory and then entered the <code>James.P</code> directory and ready the contents of that directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">getting file <span class="se">\A</span>my.J<span class="se">\w</span>orknotes.txt of size <span class="m">94</span> as /tmp/smbmore.Sda4KS <span class="o">(</span>0.0 KiloBytes/sec<span class="o">)</span> <span class="o">(</span>average 0.0 KiloBytes/sec<span class="o">)</span>
+</span></span><span class="line"><span class="cl">smb: <span class="se">\A</span>my.J<span class="se">\&gt;</span> <span class="nb">cd</span> ..
+</span></span><span class="line"><span class="cl">smb: <span class="se">\&gt;</span> <span class="nb">cd</span> James.P
+</span></span><span class="line"><span class="cl">smb: <span class="se">\J</span>ames.P<span class="se">\&gt;</span> dir
+</span></span><span class="line"><span class="cl">  .                                   D        <span class="m">0</span>  Thu Jun  <span class="m">3</span> 03:38:03 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  ..                                  D        <span class="m">0</span>  Thu Jun  <span class="m">3</span> 03:38:03 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">  flag.txt                            A       <span class="m">32</span>  Mon Mar <span class="m">29</span> 04:26:57 <span class="m">2021</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="m">5114111</span> blocks of size 4096. <span class="m">1753646</span> blocks available
+</span></span><span class="line"><span class="cl">smb: <span class="se">\J</span>ames.P<span class="se">\&gt;</span> 
+</span></span></code></pre></div><p>Notice that there is a file called <code>flag.txt</code> so feel free to view its contents to find the flag.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">5f61c10dffbc77a704d76016a2******
+</span></span></code></pre></div><p>I enter the flag in the last Task of the machine <code>Send Flag</code>.</p>
+<p>Once the flag was sent, a message came out saying <code>Dancing has been Pwned</code>.</p>
+<p><img src="/images/Dancing/Anexo5.png" alt="Anexo5"></p>
+<hr>
+<h2 id="completed-machine-">Completed Machine :)</h2>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2026
+     R4NC0X 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

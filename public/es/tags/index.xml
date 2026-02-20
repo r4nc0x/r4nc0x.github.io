@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on R4NC0X</title>
+    <link>http://localhost:1313/es/tags/</link>
+    <description>Recent content in Tags on R4NC0X</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acceso Anonimo/Invitado</title>
+      <link>http://localhost:1313/es/tags/acceso-anonimo/invitado/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/acceso-anonimo/invitado/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Base De Datos</title>
+      <link>http://localhost:1313/es/tags/base-de-datos/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/base-de-datos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evaluacion De Vilnerabilidad</title>
+      <link>http://localhost:1313/es/tags/evaluacion-de-vilnerabilidad/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/evaluacion-de-vilnerabilidad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTB</title>
+      <link>http://localhost:1313/es/tags/htb/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/htb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/es/tags/linux/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maquina</title>
+      <link>http://localhost:1313/es/tags/maquina/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/maquina/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reconocimiento</title>
+      <link>http://localhost:1313/es/tags/reconocimiento/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/reconocimiento/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>http://localhost:1313/es/tags/redis/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acceso Anonimo/Invitados</title>
+      <link>http://localhost:1313/es/tags/acceso-anonimo/invitados/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/acceso-anonimo/invitados/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Protocolos</title>
+      <link>http://localhost:1313/es/tags/protocolos/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/protocolos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smb</title>
+      <link>http://localhost:1313/es/tags/smb/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/smb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/es/tags/windows/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ftp</title>
+      <link>http://localhost:1313/es/tags/ftp/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/ftp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Credenciales Debiles</title>
+      <link>http://localhost:1313/es/tags/credenciales-debiles/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/credenciales-debiles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mala Configuracion</title>
+      <link>http://localhost:1313/es/tags/mala-configuracion/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/mala-configuracion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Telnet</title>
+      <link>http://localhost:1313/es/tags/telnet/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/tags/telnet/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
