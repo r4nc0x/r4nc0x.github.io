@@ -1,8 +1,8 @@
 baseURL = "https://r4nc0x.github.io/"
 title = "R4NC0X"
-theme = "hugo-coder"
-languageCode = "en"
-defaultContentLanguage = "en"
+theme = "hugo-coder" 
+languageCode = "en" 
+defaultContentLanguage = "en" 
 enableEmoji = true
 
 [pagination]
@@ -81,7 +81,7 @@ title = "R4NC0X"
 
 [languages.es.params]
 author = "R4NC0X"
-info = ["Hacker Etico", "Equipo Rojo", "Probador de Penetración"]
+info = ["Hacker Etico", "Equipo Rojo", "Pentester"]
 description = ""
 keywords = ""
 
