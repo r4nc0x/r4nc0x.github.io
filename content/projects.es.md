@@ -3,8 +3,14 @@ title = "Proyectos"
 slug = "proyectos"
 +++
 
-Durante este periodo estuve enfocado en el desarrollo y participación en nuevos proyectos relacionados con ciberseguridad y tecnología. 
+### 🔐 OverTheWire Bandit Writeups
 
-Actualmente me encuentro organizando y documentando estos trabajos para compartirlos próximamente en esta sección.
+Proyecto de ciberseguridad enfocado en la resolución de retos tipo CTF, documentando técnicas en entornos Linux.
 
-Gracias por su interés.
+- 🧠 Linux & CTF
+- 🛠️ ssh, grep, find, openssl
+- 📚 28 niveles documentados
+
+🔗 [Ver en GitHub](https://github.com/r4nc0x/bandit-writeups)
+
+---

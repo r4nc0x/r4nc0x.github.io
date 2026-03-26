@@ -223,7 +223,13 @@
 
       <div class="post-content">
         
-        <h1 id="dancing--hackthebox">Dancing &ndash; HacktheBox</h1>
+        <h1 id="dancing--hackthebox">
+  Dancing &ndash; HacktheBox
+  <a class="heading-link" href="#dancing--hackthebox">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
 <ul>
 <li>System: <em>Windows</em></li>
 <li>Difficulty: <em>Very Easy</em></li>
@@ -231,11 +237,23 @@
 </ul>
 <p><img src="/images/Dancing/Dancing.png" alt="‘Dancing’ Avatar"></p>
 <hr>
-<h2 id="summary">Summary</h2>
+<h2 id="summary">
+  Summary
+  <a class="heading-link" href="#summary">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>&ldquo;Dancing&rdquo; is a &ldquo;Very Easy&rdquo; difficulty machine from the <code>HackTheBox</code> platform. Dancing is part of the <code>Starting Point</code> laboratories.</p>
 <p>To complete the machine, run nmap to perform a port scan to the IP address <code>10.129.22.109</code>, the machine proposes the use of a service that is <code>SMB</code> [Server Message Block] so I knew that my scan would have to focus on port <code>445</code>. Since I knew which service is open using the command <code>smbclient -L [IpAddress]</code>, I listed the machine&rsquo;s Actions and proceeded to try to enter each of them with the command <code>smbclient -N \\\\10.129.22.109\ \[Sharename]</code>, the only action I could log into without a password was <code>WorkShares</code>. Once inside, ready with <code>dir</code> the contents and I find that there are two directories <code>Amy.J</code> and <code>James.P</code>, I entered the <code>Amy.J</code> directory using the <code>cd</code> command, I proceeded to review its contents and I did not find the flag so I went back to the main directory using <code>cd ..</code> and proceeded to enter the <code>James.P</code> directory by doing <code>dir</code> I found a file <code>flag.txt</code>, using the command <code>more flag.txt</code> ready the content finding the flag and solving the machine.</p>
 <hr>
-<h2 id="procedure">Procedure</h2>
+<h2 id="procedure">
+  Procedure
+  <a class="heading-link" href="#procedure">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Start by solving the Machine Tasks, some of the tasks are clues to solve the machine.</p>
 <ul>
 <li><strong>Task 1 What does the three-letter acronym SMB mean?</strong></li>
@@ -315,7 +333,13 @@
 <p>Once the flag was sent, a message came out saying <code>Dancing has been Pwned</code>.</p>
 <p><img src="/images/Dancing/Anexo5.png" alt="Anexo5"></p>
 <hr>
-<h2 id="completed-machine-">Completed Machine :)</h2>
+<h2 id="completed-machine-">
+  Completed Machine :)
+  <a class="heading-link" href="#completed-machine-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 
       </div>
 

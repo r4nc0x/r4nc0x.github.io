@@ -223,7 +223,13 @@
 
       <div class="post-content">
         
-        <h1 id="dancing--hackthebox">Dancing &ndash; HacktheBox</h1>
+        <h1 id="dancing--hackthebox">
+  Dancing &ndash; HacktheBox
+  <a class="heading-link" href="#dancing--hackthebox">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
 <ul>
 <li>Sistema: <em>Windows</em></li>
 <li>Dificultad: <em>Muy Facil</em></li>
@@ -231,11 +237,23 @@
 </ul>
 <p><img src="/images/Dancing/Dancing.png" alt="‘Dancing’ Avatar"></p>
 <hr>
-<h2 id="resumen">Resumen</h2>
+<h2 id="resumen">
+  Resumen
+  <a class="heading-link" href="#resumen">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>&ldquo;Dancing&rdquo; es una maquina de dificultad &ldquo;Muy Facil&rdquo; de la plataforma <code>HackTheBox</code>. Dancing forma parte de los laboratorios de <code>Punto de Partida</code>.</p>
 <p>Para completar la maquina ejecute nmap para realizar un escaneo de puertos a la dirrecion ip <code>10.129.22.109</code>, la maquina nos propone el uso de un servicio que es <code>SMB</code> [Server Message Block] entonces supe que mi escaneo tendria que enfocarse en el puerto <code>445</code>. Ya que supe que servicio esta abierto usando el comando <code>smbclient -L [DireccionIp]</code> liste las Acciones de la maquina y procedi a tratar de ingresar en cada una de ellas con el comando <code>smbclient -N \\\\10.129.22.109\\[Sharename]</code>, la unica accion a la que pude ingresar sin contraseña fue <code>WorkShares</code>. Ya dentro listo con <code>dir</code> los contenidos y encuentro que hay dos directorios <code>Amy.J</code> y <code>James.P</code> ingreso al directorio de <code>Amy.J</code> usando el comando <code>cd</code> procedi a revisar sus contenidos y no encontre la flag por lo que regrese al directorio principal usando <code>cd ..</code> y procedi a ingresar al directorio <code>James.P</code> haciendo <code>dir</code> encuentro un archivo <code>flag.txt</code>, usando el comando <code>more flag.txt</code> listo el contenido encontrando la bandera y resolviendo la maquina.</p>
 <hr>
-<h2 id="procedimiento">Procedimiento</h2>
+<h2 id="procedimiento">
+  Procedimiento
+  <a class="heading-link" href="#procedimiento">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Comence resolviendo las Tareas de la maquina, algunas de las tareas son pistas para resolver las maquina.</p>
 <ul>
 <li><strong>Tarea 1 ¿Qué significa el acrónimo de tres letras SMB?</strong></li>
@@ -315,7 +333,13 @@
 <p>Una ves enviada la bandera salio un mensaje diciendo <code>Dancing has been Pwned</code>.</p>
 <p><img src="/images/Dancing/Anexo5.png" alt="Anexo5"></p>
 <hr>
-<h2 id="maquina-completada-">Maquina Completada :)</h2>
+<h2 id="maquina-completada-">
+  Maquina Completada :)
+  <a class="heading-link" href="#maquina-completada-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 
       </div>
 
