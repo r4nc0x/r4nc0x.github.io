@@ -4,12 +4,13 @@ slug = "projects"
 +++
 
 ### 🔐 OverTheWire Bandit Writeups
+Practical analysis of vulnerabilities in Linux environments through CTF challenges, focused on identifying and exploiting system weaknesses while developing offensive thinking.
 
-Cybersecurity project focused on solving CTF-style challenges, documenting techniques in Linux environments.
+- Development of offensive mindset and ability to analyze and strategically exploit Linux system vulnerabilities.
 
-- 🧠 Linux & CTF
-- 🛠️ ssh, grep, find, openssl
-- 📚 28 levels documented
+- Exploration of Linux systems, interpretation of scripts and automated tasks, identification of privilege points, and controlled manipulation of input to extract information.
+
+- 28 levels documented
 
 🔗 [View on GitHub](https://github.com/r4nc0x/bandit-writeups)
 

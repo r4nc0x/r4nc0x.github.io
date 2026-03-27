@@ -55,7 +55,7 @@
       <link>http://localhost:1313/es/proyectos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/es/proyectos/</guid>
-      <description>&lt;p&gt;Durante este periodo estuve enfocado en el desarrollo y participación en nuevos proyectos relacionados con ciberseguridad y tecnología.&lt;/p&gt;&#xA;&lt;p&gt;Actualmente me encuentro organizando y documentando estos trabajos para compartirlos próximamente en esta sección.&lt;/p&gt;&#xA;&lt;p&gt;Gracias por su interés.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;-overthewire-bandit-writeups&#34;&gt;&#xA;  🔐 OverTheWire Bandit Writeups&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-overthewire-bandit-writeups&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Proyecto de ciberseguridad enfocado en la resolución de retos tipo CTF, documentando técnicas en entornos Linux.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🧠 Linux &amp;amp; CTF&lt;/li&gt;&#xA;&lt;li&gt;🛠️ ssh, grep, find, openssl&lt;/li&gt;&#xA;&lt;li&gt;📚 28 niveles documentados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;🔗 &lt;a href=&#34;https://github.com/r4nc0x/bandit-writeups&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ver en GitHub&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
   </channel>
 </rss>
