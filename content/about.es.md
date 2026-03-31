@@ -34,4 +34,4 @@ Mi objetivo profesional es consolidarme como **Pentester**, especializándome en
 ---
 
 ## Certificaciones
-- **introducción a Linux** - ID del certificado: [5471-2703-6273-2181](https://hack4u.io/check-certificate/)
+- **introducción a Linux** - ID del certificado: [0909-0001-5786-6526](https://hack4u.io/certificate/0909-0001-5786-6526)
