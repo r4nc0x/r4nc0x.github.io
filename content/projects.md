@@ -10,7 +10,7 @@ Practical analysis of vulnerabilities in Linux environments through CTF challeng
 
 - Exploration of Linux systems, interpretation of scripts and automated tasks, identification of privilege points, and controlled manipulation of input to extract information.
 
-- 28 levels documented
+- Bandit fully completed (33/33 levels documented)
 
 🔗 [View on GitHub](https://github.com/r4nc0x/bandit-writeups)
 

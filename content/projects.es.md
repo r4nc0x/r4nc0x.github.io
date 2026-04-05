@@ -10,7 +10,7 @@ Análisis práctico de vulnerabilidades en entornos Linux a través de retos CTF
 
 - Exploración de sistemas Linux, interpretación de scripts y tareas automatizadas, identificación de puntos de privilegio y manipulación controlada de datos para extraer información.
 
-- 28 niveles documentados
+- Bandit completado en su totalidad (33/33 niveles documentados)
 
 🔗 [Ver en GitHub](https://github.com/r4nc0x/bandit-writeups)
 
