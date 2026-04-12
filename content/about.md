@@ -35,3 +35,4 @@ My professional goal is to establish myself as a **Pentester**, specializing in 
 
 ## Certifications
 - **introduction to linux** - certificate id: [0909-0001-5786-6526](https://hack4u.io/certificate/0909-0001-5786-6526)
+- **Arch Linux from scratch** - certificate id: [3395-8704-0771-5995](https://hack4u.io/certificate/3395-8704-0771-5995)
