@@ -3,7 +3,8 @@ title = "Projects"
 slug = "projects"
 +++
 
-## 🔐 OverTheWire Bandit Writeups
+## 🟢 OverTheWire Bandit Writeups
+![texto alternativo](/images/Projects/image.png)
 Practical analysis of vulnerabilities in Linux environments through CTF challenges, focused on identifying and exploiting system weaknesses while developing offensive thinking.
 
 - Development of offensive mindset and ability to analyze and strategically exploit Linux system vulnerabilities.
